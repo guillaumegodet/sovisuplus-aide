@@ -16,14 +16,13 @@ ces références.
 **Les personnes et les structures :**
 
 1. l'établissement fournit la liste de ses personnes et de ses structures, avec leurs identifiants ;
-2. cette liste alimente un graphe de connaissances commun aux outils CRISalid ;
-3. SoVisu+ reçoit les créations et les mises à jour depuis ce graphe.
+2. SoVisu+ reçoit les créations et les mises à jour à partir de cette liste.
 
 **Les publications :**
 
-1. le moissonneur interroge les sources à partir des identifiants de chaque personne ;
-2. il transmet les références trouvées au graphe, qui les rapproche pour construire des publications ;
-3. SoVisu+ les reçoit et les affiche.
+1. les sources sont interrogées à partir des identifiants de chaque personne ;
+2. les références trouvées sont rapprochées, pour regrouper celles qui décrivent la même publication ;
+3. SoVisu+ reçoit les publications ainsi construites et les affiche.
 
 | Source | Nature |
 |---|---|
@@ -44,7 +43,7 @@ Quand le résultat arrive, un message signale que la liste a changé. Cliquez su
 
 ## Vos corrections
 
-Une correction faite dans SoVisu+ est transmise au graphe. Pendant ce temps, la fiche affiche :
+Une correction faite dans SoVisu+ n'est pas immédiate. Pendant son traitement, la fiche affiche :
 « Ce document est en cours de mise à jour et ne peut pas être modifié pour le moment. »
 
 ## Limites connues

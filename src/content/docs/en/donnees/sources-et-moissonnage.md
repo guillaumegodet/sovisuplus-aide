@@ -15,14 +15,13 @@ external bibliographic sources. **Harvesting** is the collection of these refere
 **People and structures:**
 
 1. the institution provides the list of its people and structures, with their identifiers;
-2. this list feeds a knowledge graph shared by the CRISalid tools;
-3. SoVisu+ receives creations and updates from this graph.
+2. SoVisu+ receives creations and updates based on this list.
 
 **Publications:**
 
-1. the harvester queries the sources using each person's identifiers;
-2. it sends the references it finds to the graph, which reconciles them to build publications;
-3. SoVisu+ receives and displays them.
+1. the sources are queried using each person's identifiers;
+2. the references found are matched, to group those describing the same publication;
+3. SoVisu+ receives the resulting publications and displays them.
 
 | Source | Nature |
 |---|---|
@@ -43,7 +42,7 @@ When the result arrives, a message says the list has changed. Click **Update vie
 
 ## Your corrections
 
-A correction made in SoVisu+ is sent to the graph. In the meantime, the record shows:
+A correction made in SoVisu+ is not immediate. While it is processed, the record shows:
 "This document is being updated and cannot be edited right now."
 
 ## Known limits
