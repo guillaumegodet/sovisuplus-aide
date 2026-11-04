@@ -39,8 +39,8 @@ un établissement. Les pages Tableau de bord et Publications s'affichent alors p
 | **Structures** | Les structures de recherche en liste, en table hiérarchique ou en arborescence, avec leurs membres |
 | **Expertises** | Page encore en construction, voir [Fonctions à venir](/donnees/fonctions-a-venir/) |
 
-Le menu de votre compte, en bas de la barre latérale, donne accès à **Accéder à mon compte**, c'est-à-dire à vos
-affiliations et à vos identifiants.
+En bas de la barre latérale, votre nom ouvre le menu du compte, et **Accéder à mon compte** mène à vos identifiants et à
+vos affiliations. **Assistance** ouvre cette aide ou un contact, selon votre établissement.
 
 ## Trois réflexes
 

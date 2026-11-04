@@ -30,7 +30,7 @@ scripts/check-public.mjs        garde-fou contre les données personnelles ou in
    du frontmatter et garder `sidebar.order`.
 2. Reprendre les libellés de boutons de `src/locales/fr/messages.po` du dépôt SoVisu+, à la version documentée.
 3. **Aucune donnée réelle :** le site est public. Exemples fictifs, identifiants `0000-0000-0000-0000`, adresses
-   `example.org`, aucun nom d'hôte interne.
+   `example.org`, aucun nom d'hôte interne. Seules exceptions : les contacts publics listés dans `scripts/check-public.mjs`.
 4. Ne pas présenter la configuration d'un établissement comme le fonctionnement général : utiliser la mention
    « Disponibilité » (`disponibilite` de `<QuiOu>`).
 5. Une fonction inachevée va dans `donnees/fonctions-a-venir`, pas dans un guide.

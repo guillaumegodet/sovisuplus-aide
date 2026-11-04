@@ -1,16 +1,78 @@
-/* Accent colours: orange in dark mode, navy in light mode (the orange is too pale for links on a white
- * background). The logos in the SoVisu+ repository belong to an institution: do not reuse them here. */
+/* SoVisu+ palette (configs/default/colors.ts of the SoVisu+ repository): the green top bar echoes the
+ * application's side bar. The default SoVisu+ logo is white, hence the same logo in both themes.
+ * Other logos of that repository (public/icons/logo-*.svg) belong to an institution: do not reuse them. */
 
 :root {
-	--sl-color-accent-low: #3d2a0e;
-	--sl-color-accent: #ed9b27;
-	--sl-color-accent-high: #fbdcae;
+	--sovisu-green: #006a61;
+	--sovisu-green-dark: #005049;
+
+	/* Dark theme (Starlight default) */
+	--sl-color-accent-low: #003732;
+	--sl-color-accent: #84d5ca;
+	--sl-color-accent-high: #b3fff3;
+	--sl-color-bg-nav: var(--sovisu-green-dark);
 }
 
 :root[data-theme='light'] {
-	--sl-color-accent-low: #dbe7f3;
-	--sl-color-accent: #00386e;
-	--sl-color-accent-high: #00264b;
+	--sl-color-accent-low: #d4e6e2;
+	--sl-color-accent: #006a61;
+	--sl-color-accent-high: #003732;
+	--sl-color-bg-nav: var(--sovisu-green);
+}
+
+/* Top bar: white on green, in both themes. */
+header.header {
+	border-bottom-color: transparent;
+}
+.site-title,
+.site-title:hover {
+	color: #ffffff;
+}
+.site-title img {
+	height: 1.9rem;
+	width: auto;
+}
+/* The logo replaces the title (it already says SoVisu+): only « Aide » is added. */
+.site-title::after {
+	content: 'Aide';
+	margin-inline-start: 0.6rem;
+	padding-inline-start: 0.7rem;
+	border-inline-start: 1px solid rgb(255 255 255 / 0.5);
+	font-size: var(--sl-text-lg);
+	font-weight: 500;
+}
+header.header starlight-theme-select,
+header.header starlight-theme-select label,
+header.header starlight-theme-select select,
+header.header .sl-flex a {
+	color: #ffffff;
+}
+header.header starlight-theme-select select option {
+	color: #1c1b19;
+}
+header.header .right-group > * {
+	--sl-color-hairline-shade: rgb(255 255 255 / 0.4);
+}
+/* Search and mobile menu buttons keep a light surface, so they stay readable on the green bar. */
+header.header site-search button[data-open-modal] {
+	background-color: #ffffff;
+	border-color: transparent;
+	color: #3a4a47;
+}
+header.header site-search button[data-open-modal] kbd {
+	background-color: #d4e6e2;
+	color: #003732;
+}
+@media (max-width: 49.99rem) {
+	header.header site-search button[data-open-modal] {
+		background-color: transparent;
+		color: #ffffff;
+	}
+}
+
+/* Mobile « Sur cette page » bar: same default surface as the page, not the green of the top bar. */
+mobile-starlight-toc nav {
+	background-color: var(--sl-color-bg);
 }
 
 /* Sidebar badge of the pages not written yet. */

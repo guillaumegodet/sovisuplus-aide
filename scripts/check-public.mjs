@@ -14,8 +14,8 @@ const RULES = [
 	{ name: 'IP address', re: /\b(?:\d{1,3}\.){3}\d{1,3}\b/g },
 	{ name: 'ORCID', re: /\b\d{4}-\d{4}-\d{4}-\d{3}[\dX]\b/g },
 ];
-// Fictional identifiers allowed in examples.
-const ALLOWED = new Set(['0000-0000-0000-0000']);
+// Fictional identifiers allowed in examples, and public contact addresses given on purpose.
+const ALLOWED = new Set(['0000-0000-0000-0000', 'guillaume.godet@univ-nantes.fr']);
 
 const filesOf = (path) => {
 	if (!existsSync(path)) return [];
