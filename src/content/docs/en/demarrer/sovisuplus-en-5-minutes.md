@@ -15,7 +15,7 @@ Some features depend on your institution's configuration and on your rights. See
 
 ## Where the data comes from
 
-SoVisu+ does not ask you to enter your publications. It receives them from two chains:
+SoVisu+ does not ask you to enter your publications. Its data has two origins:
 
 - **people and structures** come from your institution's directory;
 - **publications** are collected from HAL, ScanR, IdRef, OpenAlex and Scopus, using each person's identifiers.

@@ -7,8 +7,8 @@ sidebar:
 
 ## Ce que c'est
 
-Un identifiant distingue une personne de ses homonymes. C'est à partir de lui que le moissonneur retrouve les
-publications : il détermine donc directement ce que SoVisu+ affiche pour vous. Vos identifiants IdHAL, ORCID et IdRef
+Un identifiant distingue une personne de ses homonymes. C'est à partir de lui que les publications sont
+retrouvées auprès des sources : il détermine donc directement ce que SoVisu+ affiche pour vous. Vos identifiants IdHAL, ORCID et IdRef
 sont visibles dans **Accéder à mon compte › Mon profil › Mes identifiants**. L'identifiant Scopus sert à la collecte, sans être affiché.
 
 | Identifiant | Service | Peut être authentifié |

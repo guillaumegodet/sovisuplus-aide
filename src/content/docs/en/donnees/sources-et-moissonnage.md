@@ -7,7 +7,7 @@ sidebar:
 
 ## What it is
 
-SoVisu+ is the last link in a chain. It displays and lets you curate data from your institution's directory and from
+SoVisu+ displays and lets you curate data from your institution's directory and from
 external bibliographic sources. **Harvesting** is the collection of these references.
 
 ## How it works
@@ -47,10 +47,10 @@ A correction made in SoVisu+ is not immediate. While it is processed, the record
 
 ## Known limits
 
-- **Without an identifier, few results.** Sources are queried using identifiers: a person with no external identifier
-  can hardly be harvested.
+- **Without an identifier, few results.** Sources are queried using identifiers: for a person with no external
+  identifier, almost no publications can be found.
 - **A wrong identifier adds publications** that do not belong to the person.
-- **Delays vary**: they depend on the sources, on the activity of the chain and on how often the directory is updated. A
+- **Delays vary**: they depend on the sources, on the amount of data being processed and on how often the directory is updated. A
   recent publication may also not yet be known to the sources.
 - **A directory correction does not always restart harvesting.** After an identifier change, a new collection may be
   needed.

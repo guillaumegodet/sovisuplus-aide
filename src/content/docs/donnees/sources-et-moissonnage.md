@@ -7,7 +7,7 @@ sidebar:
 
 ## Ce que c'est
 
-SoVisu+ est le dernier maillon d'une chaîne. Il affiche et permet de qualifier des données qui proviennent de
+SoVisu+ affiche et permet de qualifier des données qui proviennent de
 l'annuaire de votre établissement et de sources bibliographiques externes. Le **moissonnage** est la collecte de
 ces références.
 
@@ -48,10 +48,10 @@ Une correction faite dans SoVisu+ n'est pas immédiate. Pendant son traitement, 
 
 ## Limites connues
 
-- **Sans identifiant, peu de résultats.** Les sources sont interrogées à partir des identifiants : une personne sans
-  identifiant externe n'est pratiquement pas moissonnable.
+- **Sans identifiant, peu de résultats.** Les sources sont interrogées à partir des identifiants : pour une personne
+  sans identifiant externe, on ne retrouve pratiquement aucune publication.
 - **Un identifiant faux ajoute des publications** qui ne sont pas celles de la personne.
-- **Les délais varient** : ils dépendent des sources, de l'activité de la chaîne et de la fréquence de mise à jour de
+- **Les délais varient** : ils dépendent des sources, du volume de données en cours de traitement et de la fréquence de mise à jour de
   l'annuaire. Une publication récente peut aussi ne pas être encore connue des sources.
 - **Une correction d'annuaire ne relance pas toujours le moissonnage.** Après un changement d'identifiant, une nouvelle
   collecte peut être nécessaire.
