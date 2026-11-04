@@ -39,6 +39,8 @@ différents sans qu'aucune n'ait de problème. Dans les guides, ces différences
 Pour faire corriger une donnée, voir [Où corriger quoi](/guides/corriger/ou-corriger-quoi/). L'annuaire est géré dans
 [Druid](https://druid-aide.guillaumegodet.workers.dev/), qui a sa propre aide.
 
+Contact : [Support](/guides/support/).
+
 ## Comment connaître votre situation
 
 Le [Support](/guides/support/) de votre établissement peut vous l'indiquer.

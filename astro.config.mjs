@@ -13,6 +13,7 @@ export default defineConfig({
 			title: 'Aide SoVisu+',
 			description:
 				"Centre d'aide de SoVisu+ : visualiser et qualifier ses publications, ses identifiants et ses collaborations.",
+			logo: { src: './src/assets/logo-sovisuplus.svg', alt: 'SoVisu+', replacesTitle: true },
 			favicon: '/favicon.svg',
 			// French at the root. The English version will live under src/content/docs/en/ with the same file paths.
 			defaultLocale: 'root',
