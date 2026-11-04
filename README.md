@@ -16,9 +16,11 @@ src/content/docs/
   tutoriels/              parcours longs
   donnees/                « Comprendre les données » (référence)
   nouveautes.md
+  en/                     version anglaise, mêmes chemins de fichiers
 src/components/QuiOu.astro      encadré « Qui peut le faire, et où » des guides
 src/components/PageTitle.astro  surcharge Starlight : lien « Voir en Markdown »
 src/pages/                      version Markdown de chaque page, /llms.txt, /llms-full.txt
+src/lib/i18n.ts                 libellés des composants, par langue
 gabarits/                       modèles de page guide / référence (hors build)
 scripts/check-links.mjs         liens et ancres internes
 scripts/check-public.mjs        garde-fou contre les données personnelles ou internes
@@ -34,7 +36,10 @@ scripts/check-public.mjs        garde-fou contre les données personnelles ou in
 4. Ne pas présenter la configuration d'un établissement comme le fonctionnement général : utiliser la mention
    « Disponibilité » (`disponibilite` de `<QuiOu>`).
 5. Une fonction inachevée va dans `donnees/fonctions-a-venir`, pas dans un guide.
-6. Un nouveau dossier de rubrique : l'ajouter à `sidebar` dans `astro.config.mjs` **et** à `SIDEBAR_ORDER` dans
+6. **Toute page s'écrit dans les deux langues :** `src/content/docs/en/` reprend les **mêmes chemins de fichiers** (slugs
+   français, requis par le sélecteur de langue), avec des liens internes en `/en/…`. Les libellés de l'interface viennent de
+   `src/locales/en/messages.po` de SoVisu+, tels quels, même maladroits : c'est ce que l'utilisateur voit à l'écran.
+7. Un nouveau dossier de rubrique : l'ajouter à `sidebar` dans `astro.config.mjs` **et** à `SIDEBAR_ORDER` dans
    `src/lib/markdown.ts`.
 
 ## Construire

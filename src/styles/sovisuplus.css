@@ -41,6 +41,9 @@ header.header {
 	font-size: var(--sl-text-lg);
 	font-weight: 500;
 }
+:root[lang='en'] .site-title::after {
+	content: 'Help';
+}
 header.header starlight-theme-select,
 header.header starlight-theme-select label,
 header.header starlight-theme-select select,

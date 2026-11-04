@@ -1,0 +1,46 @@
+---
+title: "Search and filter"
+description: "Find a publication in the list."
+sidebar:
+  order: 1
+---
+
+import QuiOu from '../../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="All accounts"
+	menu="Publications"
+/>
+
+The **Publications** page lists the publications of the current perspective. It is titled **My publications** when they are
+yours.
+
+## Steps
+
+1. Choose the tab: **All my documents** or **HAL incomplete filling**.
+2. For a global search, click the magnifying glass at the top right of the table. It covers the title, a contributor's
+   name, the date and the journal.
+3. Narrow down with the filters displayed under each column. The filter icon of the toolbar collapses them:
+
+| Column | Filter |
+|---|---|
+| **Type** | One or more types |
+| **Title**, **Authors**, **Published in** | Text |
+| **Publication Date** | A range, with **Min** and **Max** |
+| **Status in HAL** | One or more statuses |
+| **Open Access Status** | One or more statuses |
+| **Sources** | One or more sources |
+
+4. Click the title to open the record, or **…** in the actions column, then **Details**.
+
+## Known limits
+
+- **The scope comes first from the perspective's rules**: a missing publication is not necessarily badly searched for. See
+  [Contributions and retained roles](/en/donnees/contributions-et-roles-retenus/).
+- **Some columns cannot be sorted**, for example the statuses.
+- **Filters stay active**: remember to remove them if the list looks short.
+
+## See also
+
+- [Read open access and HAL statuses](/en/guides/publications/lire-statuts-acces-ouvert-hal/)
+- [A publication is missing](/en/guides/corriger/publication-manquante/)

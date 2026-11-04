@@ -1,0 +1,42 @@
+---
+title: "Update all publications"
+description: "Restart the collection from the sources."
+sidebar:
+  order: 2
+---
+
+import QuiOu from '../../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="document_fetcher role on the person"
+	menu="Publications › Update all publications"
+	disponibilite="instances where this role is given"
+/>
+
+This button asks the sources for a person's references. It is useful after adding an identifier or correcting a source. If
+it is grayed out, you do not have this right: go through [Support](/en/guides/support/).
+
+## Steps
+
+1. Go to the person's perspective: usually yourself.
+2. Click **Update all publications**.
+3. In **Sources to be syncronized**, uncheck unneeded sources: all are checked by default.
+4. Click **Syncronize**. **Hide** closes the window without stopping the collection.
+
+## What happens next
+
+The button shows that the collection is running. The window gives a report for each source: **Created**, **Modified**,
+**Deleted**, **Unchanged**, **Total**.
+
+References then go through the knowledge graph. When the list changes, a message appears: click **Update view**.
+
+## Known limits
+
+- **For people only**: you cannot restart the collection of a whole structure.
+- **The report does not match the number of records**: several references can form a single publication.
+- **Nothing new?** Check your [identifiers](/en/guides/mon-profil/verifier-identifiants/): the collection starts from them.
+- **A source may be unavailable** without affecting the others.
+
+## See also
+
+- [Sources and harvesting](/en/donnees/sources-et-moissonnage/)

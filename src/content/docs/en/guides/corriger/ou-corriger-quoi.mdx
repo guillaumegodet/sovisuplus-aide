@@ -1,0 +1,48 @@
+---
+title: "Where to fix what"
+description: "SoVisu+, directory, HAL or original source: where to make the fix."
+sidebar:
+  order: 1
+---
+
+import QuiOu from '../../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="All accounts"
+	menu="Depending on the data, see the table"
+/>
+
+SoVisu+ displays data that comes from elsewhere. Fixing it in the right place prevents an error from coming back.
+
+## Which data, which place
+
+| Wrong data | Where to fix it | Who can do it |
+|---|---|---|
+| Name, membership of a structure, arrival or departure date | The institution's **directory** | The department that manages it: go through [Support](/en/guides/support/) |
+| Structure, supervising institution, attachment | The institution's **directory** | Same |
+| ORCID, IdHAL, IdRef, Scopus | **Directory**, and in SoVisu+ depending on your rights | See [Check my identifiers](/en/guides/mon-profil/verifier-identifiants/) |
+| A publication's title, abstract, type, date, authors, keywords | **SoVisu+**, and the **original source** if the error is there | See [Edit the information](/en/guides/fiche-publication/modifier-les-informations/) |
+| Two records for the same publication | **SoVisu+** | See [Merge duplicates](/en/guides/publications/fusionner-des-doublons/) |
+| A reference to another work in a record | Not in the interface yet | [Support](/en/guides/support/) |
+| Deposit, affiliation or collection in HAL | **HAL** | The author or depositor, on the HAL website |
+| Open access status | Source of the status: publisher, open archive, Unpaywall | See [Open access and HAL](/en/donnees/acces-ouvert-et-hal/) |
+| Missing publication | Depends on the cause | See [A publication is missing](/en/guides/corriger/publication-manquante/) |
+| Publication that is not yours | Depends on the cause | See [A publication is wrongly attributed](/en/guides/corriger/publication-attribuee-a-tort/) |
+
+## What happens next
+
+- **A directory correction** reaches SoVisu+ at the next update of the chain: not immediately.
+- **A correction in SoVisu+** is sent to the knowledge graph. The record stays locked during this processing.
+- **A correction in a source** only appears after a new collection: see
+  [Update all publications](/en/guides/publications/mettre-a-jour-les-publications/).
+
+## Known limits
+
+- **Correcting in SoVisu+ does not correct the source**: the error remains in HAL or OpenAlex for other users.
+- **Without a role**, you cannot edit anything in SoVisu+: go through [Support](/en/guides/support/).
+
+## See also
+
+- [Sources and harvesting](/en/donnees/sources-et-moissonnage/)
+- Nantes Université: the directory is managed in Druid, see its help,
+  [Where to fix what](https://druid-aide.guillaumegodet.workers.dev/en/guides/corriger/ou-corriger-quoi/)
