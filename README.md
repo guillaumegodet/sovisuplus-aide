@@ -1,5 +1,7 @@
 # Aide SoVisu+ — centre d'aide utilisateur
 
+**Consulter l'aide : <https://sovisuplus-aide.guillaumegodet.workers.dev/>** ([version anglaise](https://sovisuplus-aide.guillaumegodet.workers.dev/en/))
+
 Site statique [Starlight](https://starlight.astro.build) (Astro) qui documente [SoVisu+](https://github.com/CRISalid-esr/SoVisuPlus)
 pour ses utilisateurs : chercheurs, référents de laboratoire, administrateurs fonctionnels. L'installation et
 l'exploitation restent documentées dans le dépôt de SoVisu+. Licence : CeCILL v2.1.
