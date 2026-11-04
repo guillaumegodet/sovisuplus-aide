@@ -16,7 +16,7 @@ Certaines fonctions dépendent de la configuration de votre établissement et de
 
 ## D'où viennent les données
 
-SoVisu+ ne vous demande pas de saisir vos publications. Il les reçoit de deux chaînes :
+SoVisu+ ne vous demande pas de saisir vos publications. Ses données ont deux origines :
 
 - **les personnes et les structures** viennent de l'annuaire de votre établissement ;
 - **les publications** sont collectées auprès de HAL, ScanR, IdRef, OpenAlex et Scopus, grâce aux identifiants de

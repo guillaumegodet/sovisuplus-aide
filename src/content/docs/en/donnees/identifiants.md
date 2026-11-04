@@ -7,7 +7,7 @@ sidebar:
 
 ## What it is
 
-An identifier distinguishes a person from their namesakes. The harvester uses it to find publications, so it directly
+An identifier distinguishes a person from their namesakes. Publications are found in the sources using it, so it directly
 determines what SoVisu+ displays for you. Your IdHAL, ORCID and IdRef identifiers are visible in **See my account › My
 account › My identifiers**. The Scopus identifier is used for collection, without being displayed.
 

@@ -7,7 +7,7 @@ sidebar:
 
 ## Ce que c'est
 
-SoVisu+ est le dernier maillon d'une chaîne. Il affiche et permet de qualifier des données qui proviennent de
+SoVisu+ affiche et permet de qualifier des données qui proviennent de
 l'annuaire de votre établissement et de sources bibliographiques externes. Le **moissonnage** est la collecte de
 ces références.
 
@@ -16,14 +16,13 @@ ces références.
 **Les personnes et les structures :**
 
 1. l'établissement fournit la liste de ses personnes et de ses structures, avec leurs identifiants ;
-2. cette liste alimente un graphe de connaissances commun aux outils CRISalid ;
-3. SoVisu+ reçoit les créations et les mises à jour depuis ce graphe.
+2. SoVisu+ reçoit les créations et les mises à jour à partir de cette liste.
 
 **Les publications :**
 
-1. le moissonneur interroge les sources à partir des identifiants de chaque personne ;
-2. il transmet les références trouvées au graphe, qui les rapproche pour construire des publications ;
-3. SoVisu+ les reçoit et les affiche.
+1. les sources sont interrogées à partir des identifiants de chaque personne ;
+2. les références trouvées sont rapprochées, pour regrouper celles qui décrivent la même publication ;
+3. SoVisu+ reçoit les publications ainsi construites et les affiche.
 
 | Source | Nature |
 |---|---|
@@ -44,15 +43,15 @@ Quand le résultat arrive, un message signale que la liste a changé. Cliquez su
 
 ## Vos corrections
 
-Une correction faite dans SoVisu+ est transmise au graphe. Pendant ce temps, la fiche affiche :
+Une correction faite dans SoVisu+ n'est pas immédiate. Pendant son traitement, la fiche affiche :
 « Ce document est en cours de mise à jour et ne peut pas être modifié pour le moment. »
 
 ## Limites connues
 
-- **Sans identifiant, peu de résultats.** Les sources sont interrogées à partir des identifiants : une personne sans
-  identifiant externe n'est pratiquement pas moissonnable.
+- **Sans identifiant, peu de résultats.** Les sources sont interrogées à partir des identifiants : pour une personne
+  sans identifiant externe, on ne retrouve pratiquement aucune publication.
 - **Un identifiant faux ajoute des publications** qui ne sont pas celles de la personne.
-- **Les délais varient** : ils dépendent des sources, de l'activité de la chaîne et de la fréquence de mise à jour de
+- **Les délais varient** : ils dépendent des sources, du volume de données en cours de traitement et de la fréquence de mise à jour de
   l'annuaire. Une publication récente peut aussi ne pas être encore connue des sources.
 - **Une correction d'annuaire ne relance pas toujours le moissonnage.** Après un changement d'identifiant, une nouvelle
   collecte peut être nécessaire.

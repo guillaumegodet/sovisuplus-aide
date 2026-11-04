@@ -7,7 +7,7 @@ sidebar:
 
 ## What it is
 
-SoVisu+ is the last link in a chain. It displays and lets you curate data from your institution's directory and from
+SoVisu+ displays and lets you curate data from your institution's directory and from
 external bibliographic sources. **Harvesting** is the collection of these references.
 
 ## How it works
@@ -15,14 +15,13 @@ external bibliographic sources. **Harvesting** is the collection of these refere
 **People and structures:**
 
 1. the institution provides the list of its people and structures, with their identifiers;
-2. this list feeds a knowledge graph shared by the CRISalid tools;
-3. SoVisu+ receives creations and updates from this graph.
+2. SoVisu+ receives creations and updates based on this list.
 
 **Publications:**
 
-1. the harvester queries the sources using each person's identifiers;
-2. it sends the references it finds to the graph, which reconciles them to build publications;
-3. SoVisu+ receives and displays them.
+1. the sources are queried using each person's identifiers;
+2. the references found are matched, to group those describing the same publication;
+3. SoVisu+ receives the resulting publications and displays them.
 
 | Source | Nature |
 |---|---|
@@ -43,15 +42,15 @@ When the result arrives, a message says the list has changed. Click **Update vie
 
 ## Your corrections
 
-A correction made in SoVisu+ is sent to the graph. In the meantime, the record shows:
+A correction made in SoVisu+ is not immediate. While it is processed, the record shows:
 "This document is being updated and cannot be edited right now."
 
 ## Known limits
 
-- **Without an identifier, few results.** Sources are queried using identifiers: a person with no external identifier
-  can hardly be harvested.
+- **Without an identifier, few results.** Sources are queried using identifiers: for a person with no external
+  identifier, almost no publications can be found.
 - **A wrong identifier adds publications** that do not belong to the person.
-- **Delays vary**: they depend on the sources, on the activity of the chain and on how often the directory is updated. A
+- **Delays vary**: they depend on the sources, on the amount of data being processed and on how often the directory is updated. A
   recent publication may also not yet be known to the sources.
 - **A directory correction does not always restart harvesting.** After an identifier change, a new collection may be
   needed.
