@@ -1,0 +1,42 @@
+---
+title: Aide SoVisu+
+description: "Centre d'aide de SoVisu+ : visualiser et qualifier ses publications, ses identifiants et ses collaborations."
+template: splash
+hero:
+  tagline: "Visualiser et qualifier vos publications, vos identifiants et vos collaborations. Cette aide décrit SoVisu+ 1.6.4."
+  actions:
+    - text: SoVisu+ en 5 minutes
+      link: /demarrer/sovisuplus-en-5-minutes/
+      icon: right-arrow
+    - text: Glossaire
+      link: /demarrer/glossaire/
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+<CardGrid>
+	<Card title="Démarrer" icon="rocket">
+		Une visite de SoVisu+, puis ce que vous pouvez faire selon votre profil.
+		[Premiers pas](/demarrer/premiers-pas/)
+	</Card>
+	<Card title="Guides pratiques" icon="document">
+		Une tâche, une page : vérifier ses identifiants, mettre à jour ses publications, fusionner des doublons.
+		[Commencer par mon profil](/guides/mon-profil/lire-mon-profil/)
+	</Card>
+	<Card title="Tutoriels" icon="open-book">
+		Des parcours complets, pas à pas, pour un chercheur ou un référent de laboratoire.
+		[Fiabiliser mes publications](/tutoriels/fiabiliser-mes-publications/)
+	</Card>
+	<Card title="Comprendre les données" icon="magnifier">
+		D'où viennent les informations, comment elles sont construites et leurs limites connues.
+		[Sources et moissonnage](/donnees/sources-et-moissonnage/)
+	</Card>
+</CardGrid>
+
+## Une donnée vous semble fausse ?
+
+<CardGrid>
+	<LinkCard title="Où corriger quoi" description="SoVisu+, annuaire, HAL ou source d'origine : où faire la correction et qui prévenir." href="/guides/corriger/ou-corriger-quoi/" />
+	<LinkCard title="Support" description="Poser une question ou signaler un problème." href="/guides/support/" />
+</CardGrid>

@@ -1,0 +1,38 @@
+---
+// « Qui / où » box at the top of every how-to guide (template in gabarits/guide.mdx):
+// required profile, menu path, and the instance capability when the feature is optional
+// (profiles and capabilities: see donnees/roles-et-droits and donnees/instances-et-configuration).
+import { Aside } from '@astrojs/starlight/components';
+import { STRINGS, asHelpLang } from '../lib/i18n';
+
+interface Props {
+	/** Profiles allowed, in help vocabulary (e.g. « Chercheur·se sur sa fiche, administrateur »). */
+	profils: string;
+	/** Path in the SoVisu+ menu (e.g. « Publications › Mettre à jour les publications »). */
+	menu: string;
+	/** Only for optional features (e.g. « instances où le dépôt HAL est configuré »). */
+	disponibilite?: string;
+}
+
+const { profils, menu, disponibilite } = Astro.props;
+// Language of the page content (a French fallback page shown under /en/ keeps French labels).
+const lang = asHelpLang(Astro.locals.starlightRoute.entryMeta.lang);
+const s = STRINGS[lang];
+const colon = lang === 'fr' ? ' :' : ':';
+---
+
+<Aside type="note" title={s.quiOuTitle}>
+	<ul class="aide-quiou">
+		<li><strong>{s.profiles}{colon}</strong> {profils}</li>
+		<li><strong>{s.inApp}{colon}</strong> {menu}</li>
+		{disponibilite && <li><strong>{s.availableOn}{colon}</strong> {disponibilite}</li>}
+	</ul>
+</Aside>
+
+<style>
+	.aide-quiou {
+		list-style: none;
+		padding-left: 0;
+		margin: 0;
+	}
+</style>

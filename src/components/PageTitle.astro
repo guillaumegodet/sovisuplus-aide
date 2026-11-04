@@ -1,0 +1,29 @@
+---
+// Starlight override: default title + « Voir en Markdown » link (raw page served by
+// src/pages/[...slug].md.ts), as on help.openalex.org — handy to paste a page into an AI assistant.
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+import { markdownHref } from '../lib/markdown';
+import { STRINGS, asHelpLang } from '../lib/i18n';
+
+const { entry, lang } = Astro.locals.starlightRoute;
+---
+
+<Default />
+<p class="aide-page-actions">
+	<a href={markdownHref(entry.id)} type="text/markdown">{STRINGS[asHelpLang(lang)].viewMarkdown}</a>
+</p>
+
+<style>
+	.aide-page-actions {
+		margin-top: 0.5rem;
+		font-size: var(--sl-text-sm);
+	}
+	.aide-page-actions a {
+		color: var(--sl-color-gray-3);
+		text-decoration: none;
+	}
+	.aide-page-actions a:hover {
+		color: var(--sl-color-accent);
+		text-decoration: underline;
+	}
+</style>

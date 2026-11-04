@@ -1,0 +1,19 @@
+/* Accent colours: orange in dark mode, navy in light mode (the orange is too pale for links on a white
+ * background). The logos in the SoVisu+ repository belong to an institution: do not reuse them here. */
+
+:root {
+	--sl-color-accent-low: #3d2a0e;
+	--sl-color-accent: #ed9b27;
+	--sl-color-accent-high: #fbdcae;
+}
+
+:root[data-theme='light'] {
+	--sl-color-accent-low: #dbe7f3;
+	--sl-color-accent: #00386e;
+	--sl-color-accent-high: #00264b;
+}
+
+/* Sidebar badge of the pages not written yet. */
+.sl-badge {
+	font-family: var(--sl-font);
+}

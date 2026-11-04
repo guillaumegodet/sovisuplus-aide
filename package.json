@@ -1,0 +1,24 @@
+{
+  "name": "sovisuplus-help",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "SoVisu+ user help centre (Starlight)",
+  "license": "CECILL-2.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node scripts/check-links.mjs && node scripts/check-public.mjs",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check-links": "node scripts/check-links.mjs",
+    "check-public": "node scripts/check-public.mjs"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.42.5",
+    "astro": "^7.3.5",
+    "sharp": "^0.35.5"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

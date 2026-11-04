@@ -1,0 +1,13 @@
+// Cloudflare Workers (static assets only) — worker « sovisuplus-aide ».
+// Workers Builds settings, production and « Previews Base » alike: root directory `/`, build `npm run build`;
+// deploy `npx wrangler deploy` (production) and `npx wrangler preview` (pull-request branches).
+// The `previews` block is required by `wrangler preview`.
+{
+  "name": "sovisuplus-aide",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  },
+  "previews": {}
+}
