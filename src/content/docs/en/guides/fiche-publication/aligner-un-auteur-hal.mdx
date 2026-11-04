@@ -1,0 +1,42 @@
+---
+title: "Align an author with HAL"
+description: "Link a contributor to their HAL profile and affiliations."
+sidebar:
+  order: 3
+---
+
+import QuiOu from '../../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="document_editor role on the publication"
+	menu="Publications › publication title › Authors"
+	disponibilite="instances where this role is given"
+/>
+
+Aligning means telling SoVisu+ which HAL profile matches a contributor. Each contributor's label shows where they stand.
+
+| Label | What it means |
+|---|---|
+| **Identified and aligned** | The contributor has a HAL identifier |
+| **Identified** | They have an ORCID or IdRef, but no HAL identifier |
+| **Not aligned** | They were added with no match in HAL |
+| **Not identified** | No identifier |
+
+## Steps: the profile
+
+1. On the contributor, click **Suggest** to get **matches in HAL**.
+2. In the right **HAL suggestion**, check the publications displayed, then click **Confirm**.
+3. Otherwise, use **Change the identification** and **Search a profile in HAL**.
+
+## Steps: affiliations
+
+1. Look for **Missing HAL affiliation**. **Imported text:** shows what the source says.
+2. Click **Suggest**, then **Align** on the right structure.
+3. Otherwise, **Add HAL affiliation**, then **Search an organization in HAL**. Prefer a **PREFERRED** structure.
+4. **Save** the changes of the tab.
+
+## Known limits
+
+- **A namesake is easily picked**: always check the publications of the proposed profile.
+- **An INCOMING structure** is not yet confirmed by HAL.
+- **HAL deposit requires at least one identified affiliation**: see [Deposit in HAL](/en/guides/hal/deposer-dans-hal/).

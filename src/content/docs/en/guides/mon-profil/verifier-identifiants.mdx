@@ -1,0 +1,52 @@
+---
+title: "Check my identifiers"
+description: "Check ORCID, IdHAL and IdRef, and know what to do if they are wrong or missing."
+sidebar:
+  order: 2
+---
+
+import QuiOu from '../../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="All accounts to check; the account_editor role to edit"
+	menu="See my account › My account › My identifiers"
+	disponibilite="for editing, instances where this role is given and where ORCID and HAL are configured"
+/>
+
+A missing identifier loses publications; a wrong one adds publications that are not yours.
+
+## Check
+
+1. For each identifier, read the service's box: **HAL author**, **ORCID record**, **IdRef Information**.
+2. Check that it really is you: name, **Other names**, **Affiliations**, **Recent publications**.
+3. Note the missing ones: "No ORCID provided.", "No HAL identifier set", "No IdRef identifier registered".
+
+## Correct, if you have no button
+
+Without a button on this page, you are read-only: see
+[Report a profile error](/en/guides/mon-profil/signaler-une-erreur-de-profil/).
+
+## Correct, if you have the buttons
+
+| Identifier | Button | What happens |
+|---|---|---|
+| **ORCID** | **Sign-in to ORCID** | You log in to ORCID and choose the permissions granted. **ORCID account authenticated** appears |
+| **IdHAL** | **Link my Hal identifier** or **Provide my Hal identifier** | You log in to HAL, without using its ORCID option. **Your SoVisu+ account is linked to your HAL account** appears |
+| **IdRef** | **Add**, then check and **Confirm** | Format: 8 digits followed by a digit or the letter X |
+
+To replace an identifier, **Delete** the old one, then add the new one.
+
+## What happens next
+
+A new identifier does not always bring back publications right away. Run
+[Update all publications](/en/guides/publications/mettre-a-jour-les-publications/) if you have the right.
+
+## Known limits
+
+- **IdRef**: a researcher cannot delete their own, only a wider right allows it.
+- **A HAL account must exist** before being linked: create it first on the HAL website.
+- **The same identifier cannot be held by two people**: see [Identifiers](/en/donnees/identifiants/).
+
+## See also
+
+- [Identifiers](/en/donnees/identifiants/)

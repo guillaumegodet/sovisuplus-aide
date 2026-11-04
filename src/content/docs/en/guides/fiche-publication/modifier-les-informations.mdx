@@ -1,0 +1,41 @@
+---
+title: "Edit the information"
+description: "Correct the title, abstract, type or date."
+sidebar:
+  order: 1
+---
+
+import QuiOu from '../../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="document_editor role on the publication"
+	menu="Publications › publication title › Bibliographic information"
+	disponibilite="instances where this role is given; the date depends on its configuration"
+/>
+
+Without an edit button, you do not have this right: go through [Support](/en/guides/support/).
+
+## Steps
+
+| To change | Click | Then |
+|---|---|---|
+| The title | **Edit title** | Type, **Add Language** if needed, **Save** |
+| The abstract | **Edit abstract** | Same |
+| The document type | **Modify** next to the type | **Select a type**, **Apply** |
+| The date | **Modify** next to the date | Choose the date or **Remove date**, **Apply** |
+
+## What happens next
+
+The correction is sent to the knowledge graph. In the meantime, the record says: "This document is being updated and cannot
+be edited right now." A message then offers **Update view**.
+
+## Known limits
+
+- **An empty field is not saved**, and at least one field must be filled in.
+- **Available languages** depend on your institution.
+- **Published in** and **Identifiers** cannot be edited here.
+- **The source is not corrected**: the error remains in HAL or OpenAlex. See [Where to fix what](/en/guides/corriger/ou-corriger-quoi/).
+
+## See also
+
+- [Publications, sources and merging](/en/donnees/publications-sources-fusion/): the **Compare sources** button leads to the **Sources** tab.

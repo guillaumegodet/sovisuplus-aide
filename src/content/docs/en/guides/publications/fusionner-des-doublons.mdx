@@ -1,0 +1,46 @@
+---
+title: "Merge duplicates"
+description: "Group two records that describe the same publication."
+sidebar:
+  order: 4
+---
+
+import QuiOu from '../../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="document_merger role on the publications concerned"
+	menu="Publications › Merge selected documents"
+	disponibilite="instances where this role is given"
+/>
+
+Two records describe the same work, often because the sources have slightly different titles. If the checkboxes of the list
+are inactive, you do not have this right: go through [Support](/en/guides/support/).
+
+:::caution[No undo in the interface]
+In version 1.6.4, **Dissociate** does not work: a wrong merge cannot be undone from SoVisu+. Check carefully before
+confirming.
+:::
+
+## Steps
+
+1. In **Publications**, find the records with the [search](/en/guides/publications/rechercher-filtrer/).
+2. Check at least two publications, in the first column.
+3. Click **Merge selected documents**.
+4. In **Merge publications**, compare titles, dates and authors. **Detail** opens a record.
+5. Leave checked only the publications to group.
+6. Click **Confirm merge**, with the number of publications in parentheses.
+
+## What happens next
+
+The request is sent to the knowledge graph. The result appears after processing: the record stays locked in the meantime.
+
+## Known limits
+
+- **A publication being updated** cannot be selected.
+- **A researcher on their own record** can only merge publications they contributed to.
+- **Merging changes nothing in the sources**: a duplicate in HAL must be dealt with in HAL.
+- **Beware of versions**: an article and its thesis, or two editions, are not necessarily duplicates.
+
+## See also
+
+- [Publications, sources and merging](/en/donnees/publications-sources-fusion/)

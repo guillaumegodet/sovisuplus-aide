@@ -1,0 +1,36 @@
+---
+title: "Read the dashboard"
+description: "Understand the dashboard charts."
+sidebar:
+  order: 2
+---
+
+import QuiOu from '../../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="All accounts"
+	menu="Dashboard"
+/>
+
+The dashboard sums up the output of the current perspective.
+
+## What each block shows
+
+- **The identity card**: the name of the perspective and, for a person, their IdHAL, ORCID and IdRef identifiers.
+- **Publication per year and open access rate**: set the period with **From:** and **to:**. Bars separate **Open Access**,
+  **Closed Access** and **Unknown access**.
+- **Concepts and collaborations**: how themes change over time. Set **Max. occurrences / year** and **Font min ↔ max**, then
+  click **Update**.
+- **Worldwide collaborations**: the map of collaborations based on contributors' affiliations.
+
+## Known limits
+
+- **Publications without a date** do not count in the per-year chart.
+- **Not all roles count**: see [Contributions and retained roles](/en/donnees/contributions-et-roles-retenus/).
+- **A structure is the sum of its people**: see [Structures and perspectives](/en/donnees/structures-et-perspectives/).
+- **The map depends on the affiliations provided** by the sources: it may be incomplete.
+- **"Unknown access" does not mean "closed"**: see [Open access and HAL](/en/donnees/acces-ouvert-et-hal/).
+
+## See also
+
+- [Export a chart](/en/guides/visualiser/exporter-un-graphique/)

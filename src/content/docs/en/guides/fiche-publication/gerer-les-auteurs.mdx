@@ -1,0 +1,41 @@
+---
+title: "Manage authors"
+description: "Correct the list, order and roles of contributors."
+sidebar:
+  order: 2
+---
+
+import QuiOu from '../../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="document_editor role on the publication"
+	menu="Publications › publication title › Authors"
+	disponibilite="instances where this role is given"
+/>
+
+The **Authors** tab lists the **Contributors** and their **Affiliations**. **Change authors**, in the bibliographic
+information, also leads there.
+
+## Steps
+
+| To | Do |
+|---|---|
+| Add a person | **Add a contributor** or **Insert contributor here**, then **Search a profile in HAL** and **Add contributor** |
+| Remove a person | **Remove contributor** |
+| Change the order | **Ranking mode**, then drag, or **Move up** and **Move down** |
+| Correct the role | **Roles**, then **Select roles** |
+| Attach to the right profile | See [Align an author with HAL](/en/guides/fiche-publication/aligner-un-auteur-hal/) |
+
+**Save** at the end: the banner "You have unsaved changes in this tab." stays displayed until you do. Leaving the tab asks for
+confirmation.
+
+## What happens next
+
+The correction is sent to the knowledge graph, and the record stays locked during this processing.
+
+## Known limits
+
+- **"Default role - please check"** flags a role assigned by default: check it, as it can exclude the publication from some
+  lists. See [Contributions and retained roles](/en/donnees/contributions-et-roles-retenus/).
+- **Profile search queries HAL**: at least 2 characters are needed, and HAL may be temporarily unavailable.
+- **The source is not corrected**: see [Where to fix what](/en/guides/corriger/ou-corriger-quoi/).

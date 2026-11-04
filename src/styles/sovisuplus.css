@@ -41,13 +41,20 @@ header.header {
 	font-size: var(--sl-text-lg);
 	font-weight: 500;
 }
+:root[lang='en'] .site-title::after {
+	content: 'Help';
+}
 header.header starlight-theme-select,
 header.header starlight-theme-select label,
 header.header starlight-theme-select select,
+header.header starlight-lang-select,
+header.header starlight-lang-select label,
+header.header starlight-lang-select select,
 header.header .sl-flex a {
 	color: #ffffff;
 }
-header.header starlight-theme-select select option {
+header.header starlight-theme-select select option,
+header.header starlight-lang-select select option {
 	color: #1c1b19;
 }
 header.header .right-group > * {
@@ -73,6 +80,13 @@ header.header site-search button[data-open-modal] kbd {
 /* Mobile « Sur cette page » bar: same default surface as the page, not the green of the top bar. */
 mobile-starlight-toc nav {
 	background-color: var(--sl-color-bg);
+}
+
+/* « Qui / où » and other note boxes: SoVisu+ green instead of the default blue. */
+.starlight-aside--note {
+	--sl-color-asides-text-accent: var(--sl-color-accent-high);
+	--sl-color-asides-border: var(--sl-color-accent);
+	background-color: var(--sl-color-accent-low);
 }
 
 /* Sidebar badge of the pages not written yet. */

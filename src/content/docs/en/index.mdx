@@ -1,0 +1,42 @@
+---
+title: SoVisu+ Help
+description: "SoVisu+ help centre: view and curate your publications, identifiers and collaborations."
+template: splash
+hero:
+  tagline: "View and curate your publications, identifiers and collaborations. This help describes SoVisu+ 1.6.4."
+  actions:
+    - text: SoVisu+ in 5 minutes
+      link: /en/demarrer/sovisuplus-en-5-minutes/
+      icon: right-arrow
+    - text: Glossary
+      link: /en/demarrer/glossaire/
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+<CardGrid>
+	<Card title="Get started" icon="rocket">
+		A tour of SoVisu+, then what you can do depending on your profile.
+		[First steps](/en/demarrer/premiers-pas/)
+	</Card>
+	<Card title="How-to guides" icon="document">
+		One task, one page: check your identifiers, update your publications, merge duplicates.
+		[Start with my profile](/en/guides/mon-profil/lire-mon-profil/)
+	</Card>
+	<Card title="Tutorials" icon="open-book">
+		Complete step-by-step paths for a researcher or a laboratory contact.
+		[Make my publications reliable](/en/tutoriels/fiabiliser-mes-publications/)
+	</Card>
+	<Card title="Understanding the data" icon="magnifier">
+		Where the information comes from, how it is built, and its known limits.
+		[Sources and harvesting](/en/donnees/sources-et-moissonnage/)
+	</Card>
+</CardGrid>
+
+## Does a piece of data look wrong?
+
+<CardGrid>
+	<LinkCard title="Where to fix what" description="SoVisu+, directory, HAL or original source: where to make the fix and who to contact." href="/en/guides/corriger/ou-corriger-quoi/" />
+	<LinkCard title="Support" description="Ask a question or report a problem." href="/en/guides/support/" />
+</CardGrid>
