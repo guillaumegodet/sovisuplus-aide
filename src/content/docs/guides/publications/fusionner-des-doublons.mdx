@@ -1,0 +1,47 @@
+---
+title: "Fusionner des doublons"
+description: "Regrouper deux fiches qui décrivent la même publication."
+sidebar:
+  order: 4
+---
+
+import QuiOu from '../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="Rôle document_merger sur les publications concernées"
+	menu="Publications › Fusionner les documents sélectionnés"
+	disponibilite="instances où ce rôle est attribué"
+/>
+
+Deux fiches décrivent le même travail, souvent parce que les sources ont des titres un peu différents. Si les cases de la
+liste sont inactives, vous n'avez pas ce droit : passez par le [Support](/guides/support/).
+
+:::caution[Pas de retour arrière dans l'interface]
+En version 1.6.4, **Dissocier** ne fonctionne pas : une fusion erronée ne se défait pas depuis SoVisu+. Vérifiez bien
+avant de confirmer.
+:::
+
+## Étapes
+
+1. Dans **Publications**, retrouvez les fiches avec la [recherche](/guides/publications/rechercher-filtrer/).
+2. Cochez au moins deux publications.
+3. Cliquez sur **Fusionner les documents sélectionnés**.
+4. Dans **Fusionner les publications**, comparez les titres, dates et auteurs. **Détail** ouvre une fiche.
+5. Laissez cochées les seules publications à regrouper.
+6. Cliquez sur **Confirmer la fusion**, avec le nombre de publications entre parenthèses.
+
+## Ce qui se passe ensuite
+
+La demande est transmise au graphe de connaissances. Le résultat apparaît après traitement : la fiche reste bloquée
+pendant ce temps.
+
+## Limites connues
+
+- **Une publication en cours de mise à jour** ne peut pas être sélectionnée.
+- **Un chercheur sur sa fiche** ne peut fusionner que des publications dont il est contributeur.
+- **La fusion ne change rien dans les sources** : un doublon dans HAL reste à traiter dans HAL.
+- **Attention aux versions** : un article et sa thèse, ou deux éditions, ne sont pas forcément des doublons.
+
+## Voir aussi
+
+- [Publications, sources et fusion](/donnees/publications-sources-fusion/)

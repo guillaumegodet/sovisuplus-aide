@@ -14,8 +14,6 @@ leur état dans la version **1.6.4**. Si vous tombez sur l'une d'elles, ce n'est
 | **Domaines** | Fiche d'une publication | L'onglet indique « Domaines de recherche : implémentation en cours » |
 | **Mettre à jour dans HAL** | Fiche d'une publication | Fonction en cours de développement : l'onglet n'apparaît pas |
 | **Dissocier**, **Invalider** | Fiche › onglet **Sources** › **Actions** | Présents dans le menu, mais sans effet : une infobulle l'annonce |
-| **Autorisations** | Mon compte | Cases affichées, sans effet enregistré |
-| **Notifications** | Mon compte | Cases affichées, sans effet enregistré |
 | **Afficher les structures fermées** | Structures | Attend les données de cycle de vie des structures |
 
 ## Limites connues

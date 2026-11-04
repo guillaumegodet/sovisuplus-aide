@@ -1,0 +1,43 @@
+---
+title: "Mettre à jour les publications"
+description: "Relancer la collecte auprès des sources."
+sidebar:
+  order: 2
+---
+
+import QuiOu from '../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="Rôle document_fetcher sur la personne"
+	menu="Publications › Mettre à jour les publications"
+	disponibilite="instances où ce rôle est attribué"
+/>
+
+Ce bouton demande aux sources les références d'une personne. Il est utile après l'ajout d'un identifiant ou une
+correction dans une source. S'il est grisé, vous n'avez pas ce droit : passez par le [Support](/guides/support/).
+
+## Étapes
+
+1. Placez-vous sur la perspective de la personne : vous-même, en général.
+2. Cliquez sur **Mettre à jour les publications**.
+3. Dans **Sources à synchroniser**, décochez les sources inutiles : toutes sont cochées par défaut.
+4. Cliquez sur **Synchroniser**. **Masquer** ferme la fenêtre sans arrêter la collecte.
+
+## Ce qui se passe ensuite
+
+Le bouton indique que la collecte tourne. La fenêtre donne pour chaque source un bilan : **Créées**, **Modifiées**,
+**Supprimées**, **Inchangées**, **Total**.
+
+Les références passent ensuite par le graphe de connaissances. Quand la liste change, un message s'affiche : cliquez
+sur **Mettre à jour l'affichage**.
+
+## Limites connues
+
+- **Réservé aux personnes** : on ne relance pas la collecte d'une structure entière.
+- **Le bilan ne correspond pas au nombre de fiches** : plusieurs références peuvent former une seule publication.
+- **Rien de nouveau ?** Vérifiez vos [identifiants](/guides/mon-profil/verifier-identifiants/) : la collecte part d'eux.
+- **Une source peut être indisponible** sans que les autres en souffrent.
+
+## Voir aussi
+
+- [Sources et moissonnage](/donnees/sources-et-moissonnage/)

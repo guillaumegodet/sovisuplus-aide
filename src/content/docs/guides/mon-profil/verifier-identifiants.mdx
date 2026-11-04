@@ -1,0 +1,53 @@
+---
+title: "Vérifier mes identifiants"
+description: "Contrôler ORCID, IdHAL et IdRef, et savoir quoi faire s'ils sont faux ou manquants."
+sidebar:
+  order: 2
+---
+
+import QuiOu from '../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="Tous les comptes pour vérifier ; le rôle account_editor pour modifier"
+	menu="Accéder à mon compte › Mon profil › Mes identifiants"
+	disponibilite="pour modifier, instances où ce rôle est attribué et où ORCID et HAL sont configurés"
+/>
+
+Un identifiant manquant fait perdre des publications ; un identifiant faux en ajoute qui ne sont pas les vôtres.
+
+## Vérifier
+
+1. Pour chaque identifiant, lisez l'encadré du service : **Auteur HAL**, **Fiche ORCID**, **Informations IdRef**.
+2. Vérifiez qu'il s'agit bien de vous : nom, **Autres noms**, **Affiliations**, **Publications récentes**.
+3. Notez ceux qui manquent : « Aucun ORCID renseigné », « Aucun identifiant HAL renseigné », « Identifiant IdRef non
+   renseigné ».
+
+## Corriger, si vous n'avez pas de bouton
+
+Sans bouton sur cette page, vous êtes en consultation : voir
+[Signaler une erreur de profil](/guides/mon-profil/signaler-une-erreur-de-profil/).
+
+## Corriger, si vous avez les boutons
+
+| Identifiant | Bouton | Ce qui se passe |
+|---|---|---|
+| **ORCID** | **Fournir mon identifiant ORCID** | Vous vous connectez à ORCID, et choisissez les autorisations accordées. **Compte ORCID authentifié** s'affiche |
+| **IdHAL** | **Lier mon compte HAL** ou **Fournir mon identifiant Hal** | Vous vous connectez à HAL, sans utiliser son option ORCID. **Votre compte SoVisu+ est lié à votre compte Hal** s'affiche |
+| **IdRef** | **Ajouter**, puis **Vérifier** et **Confirmer** | Format : 8 chiffres suivis d'un chiffre ou de la lettre X |
+
+Pour remplacer un identifiant, **Supprimez** l'ancien, puis ajoutez le nouveau.
+
+## Ce qui se passe ensuite
+
+Un nouvel identifiant ne ramène pas toujours les publications tout de suite. Lancez
+[Mettre à jour les publications](/guides/publications/mettre-a-jour-les-publications/) si vous en avez le droit.
+
+## Limites connues
+
+- **IdRef** : un chercheur ne peut pas supprimer le sien, seul un droit élargi le permet.
+- **Un compte HAL doit exister** avant d'être lié : créez-le d'abord sur le site de HAL.
+- **Un même identifiant ne peut pas être porté par deux personnes** : voir [Identifiants](/donnees/identifiants/).
+
+## Voir aussi
+
+- [Identifiants](/donnees/identifiants/)

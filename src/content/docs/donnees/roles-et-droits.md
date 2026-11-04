@@ -46,8 +46,7 @@ périmètre d'une unité si l'un de ses contributeurs appartient à cette unité
 
 ## Limites connues
 
-- **Aucun écran ne montre vos rôles** dans la version 1.6.4. Mon compte › **Autorisations** n'en est pas un : voir
-  [Fonctions à venir](/donnees/fonctions-a-venir/).
+- **Aucun écran ne montre vos rôles** dans la version 1.6.4.
 - **L'attribution se fait côté serveur**, par un administrateur technique de votre établissement.
 - **Une publication en cours de mise à jour** reste non modifiable, quel que soit votre rôle.
 

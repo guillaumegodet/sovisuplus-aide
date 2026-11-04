@@ -1,0 +1,39 @@
+---
+title: "Lire les statuts accès ouvert et HAL"
+description: "Comprendre les badges de la liste de publications."
+sidebar:
+  order: 3
+---
+
+import QuiOu from '../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="Tous les comptes"
+	menu="Publications › colonnes Statut HAL et Statut Open Access"
+/>
+
+Deux colonnes résument la situation de chaque publication. Le détail des règles est dans
+[Accès ouvert et HAL](/donnees/acces-ouvert-et-hal/).
+
+## Étapes
+
+1. Lisez **Statut Open Access** : GOLD, DIAMOND, HYBRID, BRONZE, GREEN, OTHER, CLOSED ou UNKNOWN.
+2. Lisez **Statut HAL** : **Dans HAL** ou **Hors HAL**.
+3. Survolez le badge HAL pour voir le détail et les actions.
+
+| Message | Que faire |
+|---|---|
+| **Dans HAL**, avec le type **Notice**, **Fichier** ou **Annexe** | **Voir le document sur HAL** pour vérifier le dépôt |
+| **Dans HAL**, avec un renvoi vers l'**affiliation** | Vérifiez l'affiliation déclarée dans HAL : la publication n'est pas dans la collection attendue |
+| **Publication absente de votre HAL** | Vérifiez votre **IdHAL dans Mon Compte** ; déposez si la publication n'y est vraiment pas |
+| **Identifiant IdHAL manquant** | Renseignez votre IdHAL, ou **Créer un IdHAL** sur le site de HAL |
+
+## Limites connues
+
+- **Le badge dépend de la perspective** : une même publication peut être dans la collection d'un laboratoire et pas d'un autre.
+- **Les boutons d'action demandent des droits** : **Déposer la publication dans HAL** n'est pas proposé partout.
+- **Un statut faux se corrige à la source** : voir [Où corriger quoi](/guides/corriger/ou-corriger-quoi/).
+
+## Voir aussi
+
+- [Déposer dans HAL](/guides/hal/deposer-dans-hal/)

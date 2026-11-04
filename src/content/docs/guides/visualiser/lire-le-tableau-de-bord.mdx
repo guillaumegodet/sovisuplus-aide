@@ -1,0 +1,35 @@
+---
+title: "Lire le tableau de bord"
+description: "Comprendre les graphiques du tableau de bord."
+sidebar:
+  order: 2
+---
+
+import QuiOu from '../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="Tous les comptes"
+	menu="Tableau de bord"
+/>
+
+Le tableau de bord résume la production de la perspective en cours.
+
+## Ce que montre chaque bloc
+
+- **La carte d'identité** : le nom de la perspective et, pour une personne, ses identifiants IdHAL, ORCID et IdRef.
+- **Nombre de publications par année et taux d'accès** : réglez la période avec **De :** et **à :**. Les barres séparent
+  **Accès Ouvert**, **Accès Fermé** et **Type d'accès inconnu**.
+- **Mots-clés et collaborations** : l'évolution des thèmes dans le temps. Réglez **Max. occurrences / an** et **Police min ↔ max**, puis cliquez sur **Mettre à jour**.
+- **Collaborations internationales** : la carte des collaborations d'après les affiliations des contributeurs.
+
+## Limites connues
+
+- **Les publications sans date** ne comptent pas dans le graphique par année.
+- **Tous les rôles ne comptent pas** : voir [Contributions et rôles retenus](/donnees/contributions-et-roles-retenus/).
+- **Une structure, c'est la somme de ses personnes** : voir [Structures et perspectives](/donnees/structures-et-perspectives/).
+- **La carte dépend des affiliations renseignées** dans les sources : elle peut être incomplète.
+- **« Type d'accès inconnu » n'est pas « fermé »** : voir [Accès ouvert et HAL](/donnees/acces-ouvert-et-hal/).
+
+## Voir aussi
+
+- [Exporter un graphique](/guides/visualiser/exporter-un-graphique/)

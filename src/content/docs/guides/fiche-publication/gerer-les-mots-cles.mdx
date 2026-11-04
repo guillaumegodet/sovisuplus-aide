@@ -1,0 +1,33 @@
+---
+title: "Gérer les mots-clés"
+description: "Ajouter ou retirer les mots-clés d'une publication."
+sidebar:
+  order: 4
+---
+
+import QuiOu from '../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="Rôle document_editor sur la publication"
+	menu="Publications › Détails › Mots-clés"
+	disponibilite="instances où ce rôle est attribué"
+/>
+
+Les mots-clés viennent des sources, ou de vocabulaires contrôlés. Un **Mot-clé libre** n'est relié à aucun vocabulaire.
+
+## Étapes
+
+1. Ouvrez l'onglet **Mots-clés**.
+2. **Sélectionnez un ou plusieurs vocabulaires contrôlés**.
+3. Saisissez au moins 3 caractères et choisissez un terme dans la liste.
+4. Pour retirer un mot-clé, utilisez **Supprimer** sur son étiquette.
+
+## Ce qui se passe ensuite
+
+La correction est transmise au graphe de connaissances, et la fiche reste bloquée pendant ce traitement.
+
+## Limites connues
+
+- **Sans vocabulaire sélectionné**, la recherche ne propose rien.
+- **« Aucune option »** peut indiquer que le terme n'est pas dans les vocabulaires choisis : essayez-en un autre.
+- **Le graphique Mots-clés et collaborations** du tableau de bord dépend de ces mots-clés.
