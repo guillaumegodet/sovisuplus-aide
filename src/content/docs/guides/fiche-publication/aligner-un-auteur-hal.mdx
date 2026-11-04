@@ -1,0 +1,42 @@
+---
+title: "Aligner un auteur avec HAL"
+description: "Relier un contributeur à son profil HAL et à ses affiliations."
+sidebar:
+  order: 3
+---
+
+import QuiOu from '../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="Rôle document_editor sur la publication"
+	menu="Publications › Détails › Auteurs"
+	disponibilite="instances où ce rôle est attribué"
+/>
+
+Aligner, c'est dire à SoVisu+ quel profil HAL correspond à un contributeur. L'étiquette de chaque contributeur indique où il en est.
+
+| Étiquette | Ce que cela veut dire |
+|---|---|
+| **Identifié et aligné** | Le contributeur a un identifiant HAL |
+| **Identifié** | Il a un ORCID ou un IdRef, pas d'identifiant HAL |
+| **Non aligné** | Il a été ajouté sans correspondance dans HAL |
+| **Non identifié** | Aucun identifiant |
+
+## Étapes : le profil
+
+1. Sur le contributeur, cliquez sur **Suggérer** pour obtenir des **correspondances dans HAL**.
+2. Dans la **Suggestion HAL** qui convient, vérifiez les publications affichées, puis cliquez sur **Confirmer**.
+3. Sinon, utilisez **Modifier l'identification** et **Rechercher un profil dans HAL**.
+
+## Étapes : les affiliations
+
+1. Repérez les **Affiliation HAL manquante**. Le **Texte importé** montre ce que dit la source.
+2. Cliquez sur **Suggérer**, puis **Aligner** sur la bonne structure.
+3. Sinon, **Ajouter une affiliation HAL**, puis **Rechercher une organisation dans HAL**. Préférez une structure **VALIDÉ**.
+4. **Enregistrez** les modifications de l'onglet.
+
+## Limites connues
+
+- **Un homonyme est vite arrivé** : contrôlez toujours les publications du profil proposé.
+- **Une structure NON VALIDÉ** n'est pas encore confirmée par HAL.
+- **Le dépôt HAL exige au moins une affiliation identifiée** : voir [Déposer dans HAL](/guides/hal/deposer-dans-hal/).

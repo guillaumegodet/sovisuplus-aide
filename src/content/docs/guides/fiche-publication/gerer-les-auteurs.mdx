@@ -1,0 +1,41 @@
+---
+title: "Gérer les auteurs"
+description: "Corriger la liste, l'ordre et les rôles des contributeurs."
+sidebar:
+  order: 2
+---
+
+import QuiOu from '../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="Rôle document_editor sur la publication"
+	menu="Publications › Détails › Auteurs"
+	disponibilite="instances où ce rôle est attribué"
+/>
+
+L'onglet **Auteurs** liste les **Contributeurs** et leurs **Affiliations**. **Modifier les auteurs**, dans les informations
+bibliographiques, y conduit aussi.
+
+## Étapes
+
+| Pour | Faites |
+|---|---|
+| Ajouter une personne | **Ajouter un contributeur** ou **Insérer un contributeur ici**, puis **Rechercher un profil dans HAL** et **Ajouter le contributeur** |
+| Retirer une personne | **Supprimer le contributeur** |
+| Changer l'ordre | **Mode classement**, puis glissez, ou **Monter** et **Descendre** |
+| Corriger le rôle | **Fonctions**, puis **Sélectionner des rôles** |
+| Rattacher au bon profil | Voir [Aligner un auteur avec HAL](/guides/fiche-publication/aligner-un-auteur-hal/) |
+
+**Enregistrez** à la fin : le bandeau « Vous avez des modifications non enregistrées dans cet onglet » reste affiché tant
+que ce n'est pas fait. Quitter l'onglet demande confirmation.
+
+## Ce qui se passe ensuite
+
+La correction est transmise au graphe de connaissances, et la fiche reste bloquée pendant ce traitement.
+
+## Limites connues
+
+- **« Rôle par défaut - à vérifier »** signale un rôle attribué par défaut : vérifiez-le, car il peut écarter la
+  publication de certaines listes. Voir [Contributions et rôles retenus](/donnees/contributions-et-roles-retenus/).
+- **La recherche de profil interroge HAL** : il faut au moins 2 caractères, et HAL peut être momentanément indisponible.
+- **La source n'est pas corrigée** : voir [Où corriger quoi](/guides/corriger/ou-corriger-quoi/).

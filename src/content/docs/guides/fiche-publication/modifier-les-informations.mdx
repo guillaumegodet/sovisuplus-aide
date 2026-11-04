@@ -1,0 +1,41 @@
+---
+title: "Modifier les informations"
+description: "Corriger le titre, le résumé, le type ou la date."
+sidebar:
+  order: 1
+---
+
+import QuiOu from '../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="Rôle document_editor sur la publication"
+	menu="Publications › Détails › Informations bibliographiques"
+	disponibilite="instances où ce rôle est attribué ; la date dépend de sa configuration"
+/>
+
+Sans bouton de modification, vous n'avez pas ce droit : passez par le [Support](/guides/support/).
+
+## Étapes
+
+| Pour changer | Cliquez sur | Puis |
+|---|---|---|
+| Le titre | **Modifier le titre** | Saisissez, **Ajouter une langue** si besoin, **Enregistrer** |
+| Le résumé | **Modifier le résumé** | Idem |
+| Le type de document | **Modifier** à côté du type | **Sélectionnez le type**, **Appliquer** |
+| La date | **Modifier** à côté de la date | Choisissez la date ou **Supprimer la date**, **Appliquer** |
+
+## Ce qui se passe ensuite
+
+La correction est transmise au graphe de connaissances. Pendant ce temps, la fiche indique : « Ce document est en cours de
+mise à jour et ne peut pas être modifié pour le moment. » Un message propose ensuite **Mettre à jour l'affichage**.
+
+## Limites connues
+
+- **Un champ vide n'est pas enregistré**, et au moins un champ doit être rempli.
+- **Les langues disponibles** dépendent de votre établissement.
+- **Publié dans** et **Identifiants** ne se modifient pas ici.
+- **La source n'est pas corrigée** : l'erreur reste dans HAL ou OpenAlex. Voir [Où corriger quoi](/guides/corriger/ou-corriger-quoi/).
+
+## Voir aussi
+
+- [Comparer les sources](/donnees/publications-sources-fusion/) : le bouton **Comparer les sources** mène à l'onglet **Sources**.

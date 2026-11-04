@@ -1,0 +1,48 @@
+---
+title: "Où corriger quoi"
+description: "SoVisu+, annuaire, HAL ou source d'origine : où faire la correction."
+sidebar:
+  order: 1
+---
+
+import QuiOu from '../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="Tous les comptes"
+	menu="Selon la donnée, voir le tableau"
+/>
+
+SoVisu+ affiche des données qui viennent d'ailleurs. Corriger au bon endroit évite qu'une erreur ne revienne.
+
+## Quelle donnée, quel endroit
+
+| Donnée fausse | Où corriger | Qui peut le faire |
+|---|---|---|
+| Nom, appartenance à une structure, date d'arrivée ou de départ | **Annuaire** de l'établissement | Le service qui le gère : passez par le [Support](/guides/support/) |
+| Structure, tutelle, rattachement | **Annuaire** de l'établissement | Idem |
+| ORCID, IdHAL, IdRef, Scopus | **Annuaire**, et dans SoVisu+ selon vos droits | Voir [Vérifier mes identifiants](/guides/mon-profil/verifier-identifiants/) |
+| Titre, résumé, type, date, auteurs, mots-clés d'une publication | **SoVisu+**, et la **source d'origine** si l'erreur y est | Voir [Modifier les informations](/guides/fiche-publication/modifier-les-informations/) |
+| Deux fiches pour une même publication | **SoVisu+** | Voir [Fusionner des doublons](/guides/publications/fusionner-des-doublons/) |
+| Une référence d'un autre travail dans une fiche | Pas encore dans l'interface | [Support](/guides/support/) |
+| Dépôt, affiliation ou collection dans HAL | **HAL** | L'auteur ou le déposant, sur le site de HAL |
+| Statut d'accès ouvert | Source du statut : éditeur, archive ouverte, Unpaywall | Voir [Accès ouvert et HAL](/donnees/acces-ouvert-et-hal/) |
+| Publication absente | Selon la cause | Voir [Une publication manque](/guides/corriger/publication-manquante/) |
+| Publication qui n'est pas la vôtre | Selon la cause | Voir [Une publication est attribuée à tort](/guides/corriger/publication-attribuee-a-tort/) |
+
+## Ce qui se passe ensuite
+
+- **Une correction d'annuaire** arrive dans SoVisu+ à la mise à jour suivante de la chaîne : pas immédiatement.
+- **Une correction dans SoVisu+** est transmise au graphe de connaissances. La fiche reste bloquée pendant ce traitement.
+- **Une correction dans une source** n'apparaît qu'après une nouvelle collecte : voir
+  [Mettre à jour les publications](/guides/publications/mettre-a-jour-les-publications/).
+
+## Limites connues
+
+- **Corriger dans SoVisu+ ne corrige pas la source** : l'erreur reste dans HAL ou OpenAlex pour les autres utilisateurs.
+- **Sans rôle**, vous ne pouvez rien modifier dans SoVisu+ : passez par le [Support](/guides/support/).
+
+## Voir aussi
+
+- [Sources et moissonnage](/donnees/sources-et-moissonnage/)
+- Nantes Université : l'annuaire est géré dans Druid, voir son aide,
+  [Où corriger quoi](https://druid-aide.guillaumegodet.workers.dev/guides/corriger/ou-corriger-quoi/)

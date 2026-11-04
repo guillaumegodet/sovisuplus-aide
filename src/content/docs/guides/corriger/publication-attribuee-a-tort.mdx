@@ -1,0 +1,42 @@
+---
+title: "Une publication est attribuée à tort"
+description: "Que faire quand une publication n'est pas la vôtre."
+sidebar:
+  order: 3
+---
+
+import QuiOu from '../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="Tous les comptes ; la correction demande le rôle document_editor"
+	menu="Publications › Détails › Auteurs"
+/>
+
+Une publication de votre liste n'est pas la vôtre. C'est le plus souvent un homonyme, ou un identifiant erroné.
+
+## Étapes
+
+1. Dans **Publications**, ouvrez la fiche avec **Détails**.
+2. Dans l'onglet **Sources**, repérez quelles sources citent cette publication.
+3. Dans l'onglet **Auteurs**, retrouvez le contributeur rattaché à votre nom.
+4. Déterminez la cause :
+
+| Ce que vous constatez | Cause probable | Que faire |
+|---|---|---|
+| Beaucoup de publications d'un autre domaine | Un **identifiant erroné** sur votre fiche | [Signaler une erreur de profil](/guides/mon-profil/signaler-une-erreur-de-profil/) |
+| Une seule publication, dans une source | Une **erreur dans la source** : homonyme, profil HAL mélangé | Faites corriger la source ; si vous avez le rôle, corrigez aussi la fiche |
+| Le contributeur a le mauvais profil dans **Auteurs** | Une **mauvaise identification** | Avec le rôle : [Gérer les auteurs](/guides/fiche-publication/gerer-les-auteurs/). Sinon, [Support](/guides/support/) |
+
+## Ce qui se passe ensuite
+
+Une correction faite dans SoVisu+ est transmise au graphe. La fiche reste bloquée pendant ce traitement.
+
+## Limites connues
+
+- Si l'erreur reste dans la source, une nouvelle collecte peut la faire revenir : corrigez aussi la source.
+- Corriger un identifiant ne retire pas forcément les publications déjà collectées : signalez-les au support.
+
+## Voir aussi
+
+- [Identifiants](/donnees/identifiants/)
+- [Où corriger quoi](/guides/corriger/ou-corriger-quoi/)

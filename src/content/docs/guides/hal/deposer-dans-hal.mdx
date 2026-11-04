@@ -1,0 +1,53 @@
+---
+title: "Déposer dans HAL"
+description: "Déposer depuis SoVisu+ une publication absente de HAL."
+sidebar:
+  order: 1
+---
+
+import QuiOu from '../../../../components/QuiOu.astro';
+
+<QuiOu
+	profils="Rôle document_depositor, sur une perspective personne"
+	menu="Publications › Détails › Déposer dans HAL"
+	disponibilite="instances où le dépôt HAL est configuré"
+/>
+
+L'onglet **Déposer dans HAL** apparaît pour une publication **sans référence HAL**. S'il est absent, le dépôt n'est pas
+ouvert pour vous : vous pouvez toujours déposer directement sur le site de HAL.
+
+## Avant de commencer
+
+| Il faut | Où le faire |
+|---|---|
+| Un **IdHAL** et un compte HAL liés | [Vérifier mes identifiants](/guides/mon-profil/verifier-identifiants/) |
+| Une **date de publication** | **Informations bibliographiques** |
+| Un **titre** et un **résumé** en français et en anglais | **Informations bibliographiques** |
+| Une **revue**, pour un article | **Informations bibliographiques** |
+| Au moins une **affiliation identifiée** | [Aligner un auteur avec HAL](/guides/fiche-publication/aligner-un-auteur-hal/) |
+| Un mot-clé en français et un en anglais, pour une thèse ou une HDR | [Gérer les mots-clés](/guides/fiche-publication/gerer-les-mots-cles/) |
+
+## Étapes
+
+1. Complétez les **Métadonnées du dépôt**. Le titre, le résumé, la date, la revue et les auteurs sont repris des autres onglets.
+2. Choisissez les **Domaines HAL**.
+3. Ajoutez le **Fichier principal (PDF)**, avec sa **Licence**, et d'éventuels fichiers complémentaires. Selon le type de
+   document, **Notice seule (sans fichier)** est possible.
+4. Cliquez sur **Vérifier**, relisez le **Récapitulatif du dépôt**, puis **Confirmer le dépôt**.
+
+## Ce qui se passe ensuite
+
+| Statut | Que faire |
+|---|---|
+| **Dépôt en cours** | Attendre |
+| **En cours de modération** | Attendre : 1 à 5 jours ouvrés |
+| **Publié sur HAL** | [Mettre à jour vos publications](/guides/publications/mettre-a-jour-les-publications/) pour voir la source HAL |
+| **Modifications demandées** | Les appliquer sur le site de HAL, puis **Actualiser le statut** |
+| **Rejeté** | Voir le message des modérateurs |
+| **Échec de l'envoi** | Lire le **Message d'erreur** et réessayer |
+
+## Limites connues
+
+- **Vous vous engagez sur les droits du fichier** : vérifiez la politique de l'éditeur avant de déposer.
+- **Une affiliation non reconnue par HAL n'est pas transmise** : un message vous en avertit.
+- **Mettre à jour un dépôt existant n'est pas disponible** : voir [Fonctions à venir](/donnees/fonctions-a-venir/).
