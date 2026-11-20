@@ -44,9 +44,9 @@ The "Contact" column assumes the same roles as the researcher, given over a unit
 For your rights, a publication is yours if you are among its **contributors**. It falls within a unit's scope if one of its
 contributors belongs to this unit.
 
-## Known limits
+## Good to know
 
-- **No screen shows your roles** in version 1.6.4.
+- **No screen shows your roles.**
 - **Roles are given on the server side**, by a technical administrator of your institution.
 - **A publication being updated** remains locked, whatever your role.
 

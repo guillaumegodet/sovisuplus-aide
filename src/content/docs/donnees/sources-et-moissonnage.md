@@ -46,7 +46,7 @@ Quand le résultat arrive, un message signale que la liste a changé. Cliquez su
 Une correction faite dans SoVisu+ n'est pas immédiate. Pendant son traitement, la fiche affiche :
 « Ce document est en cours de mise à jour et ne peut pas être modifié pour le moment. »
 
-## Limites connues
+## À savoir
 
 - **Sans identifiant, peu de résultats.** Les sources sont interrogées à partir des identifiants : pour une personne
   sans identifiant externe, on ne retrouve pratiquement aucune publication.

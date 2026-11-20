@@ -20,8 +20,8 @@ Tout le monde peut **consulter** : tableau de bord, publications et structures, 
 | Profil | Vous pouvez aussi | Par où commencer |
 |---|---|---|
 | **Compte sans rôle** | Rien de plus que consulter | [Lire mon profil](/guides/mon-profil/lire-mon-profil/), [Lire le tableau de bord](/guides/visualiser/lire-le-tableau-de-bord/) |
-| **Chercheur·se sur sa fiche** | Corriger vos publications, les fusionner, relancer leur collecte | [Fiabiliser mes publications](/tutoriels/fiabiliser-mes-publications/) |
-| **Référent·e à périmètre** | Faire de même pour une unité ou un établissement | [Nettoyer le corpus de son laboratoire](/tutoriels/referent-labo-nettoyer-le-corpus/) |
+| **Chercheur·se sur sa fiche** | Corriger vos publications, les fusionner, relancer leur collecte | [Fiabiliser mes publications](/cas-d-usage/fiabiliser-mes-publications/) |
+| **Référent·e à périmètre** | Faire de même pour une unité ou un établissement | [Nettoyer le corpus de son laboratoire](/cas-d-usage/referent-labo-nettoyer-le-corpus/) |
 | **Administrateur** | Tout, sur toutes les fiches | [Rôles et droits](/donnees/roles-et-droits/) |
 
 SoVisu+ n'affiche pas votre profil en clair, et n'a pas d'écran de gestion des droits. Un indice simple : si le bouton
@@ -36,9 +36,9 @@ SoVisu+ n'affiche pas votre profil en clair, et n'a pas d'écran de gestion des 
    [Une publication est attribuée à tort](/guides/corriger/publication-attribuee-a-tort/).
 4. Ouvrez **Tableau de bord** pour voir ces publications par année et les collaborations.
 
-## Limites connues
+## À savoir
 
-- Tout compte connecté peut consulter la plupart des données des autres perspectives : ne supposez pas que ce que
-  vous voyez ici est réservé à votre laboratoire.
+- **La plupart des données sont visibles de tous les comptes connectés**, celles de votre laboratoire comme celles des
+  autres.
 - Une personne absente de l'annuaire transmis à SoVisu+ n'a pas de compte, même si elle figure parmi les co-auteurs
   d'une publication.

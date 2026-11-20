@@ -44,9 +44,9 @@ La colonne « Référent·e » suppose les mêmes rôles que le chercheur, attri
 Pour vos droits, une publication est la vôtre si vous figurez parmi ses **contributeurs**. Elle entre dans le
 périmètre d'une unité si l'un de ses contributeurs appartient à cette unité.
 
-## Limites connues
+## À savoir
 
-- **Aucun écran ne montre vos rôles** dans la version 1.6.4.
+- **Aucun écran ne montre vos rôles.**
 - **L'attribution se fait côté serveur**, par un administrateur technique de votre établissement.
 - **Une publication en cours de mise à jour** reste non modifiable, quel que soit votre rôle.
 

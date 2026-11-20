@@ -1,6 +1,6 @@
 ---
 title: "Exporter un graphique"
-description: "Télécharger un graphique du tableau de bord."
+description: "Télécharger en image un graphique du tableau de bord."
 sidebar:
   order: 3
 ---
@@ -12,18 +12,44 @@ import QuiOu from '../../../../components/QuiOu.astro';
 	menu="Tableau de bord"
 />
 
-## Étapes
+Deux graphiques du tableau de bord se téléchargent en image. L'image reproduit ce qui est affiché à l'écran : faites vos
+réglages d'abord, exportez ensuite.
 
-| Graphique | Comment l'exporter |
+## Publications par année
+
+Carte **Publications scientifiques**, graphique **Nombre de publications par année et taux d'accès**.
+
+1. **Choisissez la période** avec les listes **De :** et **à :**, sous le titre de la page. Par défaut, le graphique
+   couvre l'année en cours et les cinq années précédentes.
+2. **Masquez une série si besoin** : un clic sur une entrée de la légende, par exemple « inconnu », la retire du
+   graphique et de l'image. Un second clic la rétablit.
+3. **Cliquez sur l'icône d'enregistrement**, en haut à droite du graphique. Son infobulle indique **Télécharger en PNG**.
+
+Le fichier s'appelle `Publications_OA_<début>_<fin>.png`, par exemple `Publications_OA_2021_2026.png`.
+
+## Mots-clés et collaborations
+
+Carte **Mots-clés et collaborations** : les mots-clés et les co-auteurs les plus fréquents, année par année.
+
+1. **Choisissez la période** avec **De :** et **à :** : ce graphique suit les mêmes années que le précédent.
+2. **Réglez l'affichage** sous le graphique : **Max. occurrences / an** fixe le nombre de termes affichés par année, et
+   **Police min ↔ max** la taille du plus petit et du plus grand mot. Cliquez ensuite sur **Mettre à jour** : sans ce
+   clic, le graphique, et donc l'image, garde les réglages précédents.
+3. **Cliquez sur l'icône de téléchargement**, à droite de **Mettre à jour** (infobulle **Télécharger le wordstream**),
+   puis choisissez **Télécharger en PNG** ou **Télécharger en SVG**. L'icône reste grisée tant que le graphique n'est pas
+   affiché.
+
+Le fichier s'appelle `wordstream_<identifiant>_<début>-<fin>`, où l'identifiant est celui de la personne ou de la
+structure affichée. Le texte est noir sur fond blanc, même en mode sombre.
+
+| Format | À choisir pour |
 |---|---|
-| **Nombre de publications par année et taux d'accès** | **Télécharger en PNG**, dans les outils du graphique |
-| **Mots-clés et collaborations** | **Télécharger le wordstream**, en PNG ou en SVG, une fois le graphique affiché |
+| **PNG** | Une diapositive, un courriel, une page web : image prête à l'emploi, en double résolution |
+| **SVG** | Un poster ou une figure à retoucher : image vectorielle, nette à toutes les tailles |
 
-Réglez la période et les curseurs avant d'exporter : l'image reprend l'affichage.
+## À savoir
 
-Pour une liste de structures, utilisez **Exporter** dans [Structures](/guides/structures/parcourir-les-structures/).
-
-## Limites connues
-
-- **La carte Collaborations internationales** n'a pas de bouton d'export.
-- **Citez la date d'extraction** : les chiffres évoluent à chaque mise à jour des données.
+- **La carte Collaborations internationales** ne se télécharge pas.
+- **Datez l'image** si vous la réutilisez, par exemple dans sa légende : les chiffres changent à chaque mise à jour des
+  données.
+- **Pour une liste de structures**, utilisez **Exporter** dans [Structures](/guides/structures/parcourir-les-structures/).

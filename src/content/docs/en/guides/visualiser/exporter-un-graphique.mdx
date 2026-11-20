@@ -1,6 +1,6 @@
 ---
 title: "Export a chart"
-description: "Download a dashboard chart."
+description: "Download a dashboard chart as an image."
 sidebar:
   order: 3
 ---
@@ -12,18 +12,42 @@ import QuiOu from '../../../../../components/QuiOu.astro';
 	menu="Dashboard"
 />
 
-## Steps
+Two dashboard charts can be downloaded as images. The image reproduces what is displayed on screen: adjust the settings
+first, then export.
 
-| Chart | How to export it |
+## Publications per year
+
+**Scholarly publication** card, **Publication per year and open access rate** chart.
+
+1. **Choose the period** with the **From:** and **to:** lists, under the page title. By default, the chart covers the
+   current year and the five previous years.
+2. **Hide a series if needed**: clicking a legend entry, for instance "unknown", removes it from the chart and from the
+   image. A second click restores it.
+3. **Click the save icon**, at the top right of the chart. Its tooltip reads **Download into PNG format**.
+
+The file is named `Publications_OA_<start>_<end>.png`, for instance `Publications_OA_2021_2026.png`.
+
+## Concepts and collaborations
+
+**Concepts and collaborations** card: the most frequent keywords and co-authors, year by year.
+
+1. **Choose the period** with **From:** and **to:**: this chart follows the same years as the previous one.
+2. **Adjust the display** under the chart: **Max. occurrences / year** sets the number of terms shown per year, and
+   **Font min ↔ max** the size of the smallest and largest word. Then click **Update**: without this click, the chart,
+   and therefore the image, keeps the previous settings.
+3. **Click the download icon**, to the right of **Update** (tooltip **Download the wordstream**), then choose
+   **Download as PNG** or **Download as SVG**. The icon stays greyed out until the chart is displayed.
+
+The file is named `wordstream_<identifier>_<start>-<end>`, where the identifier is that of the person or structure
+displayed. The text is black on a white background, even in dark mode.
+
+| Format | Choose it for |
 |---|---|
-| **Publication per year and open access rate** | **Download into PNG format**, in the chart's tools |
-| **Concepts and collaborations** | **Download the wordstream**, as PNG or SVG, once the chart is displayed |
+| **PNG** | A slide, an email, a web page: a ready-to-use image, at double resolution |
+| **SVG** | A poster or a figure to edit: a vector image, sharp at any size |
 
-Set the period and sliders before exporting: the image reflects the display.
+## Good to know
 
-For a list of structures, use **Export** in [Structures](/en/guides/structures/parcourir-les-structures/).
-
-## Known limits
-
-- **The Worldwide collaborations map** has no export button.
-- **State the extraction date**: figures change with every data update.
+- **The Worldwide collaborations map** cannot be downloaded.
+- **Date the image** if you reuse it, for instance in its caption: figures change with every data update.
+- **For a list of structures**, use **Export** in [Structures](/en/guides/structures/parcourir-les-structures/).

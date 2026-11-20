@@ -33,7 +33,7 @@ ses contributeurs. Elle apparaît en revanche pour le doctorant, enregistré com
 Le graphique des publications par année applique le réglage de la perspective, et ne compte que les publications
 **datées**. Une publication sans date peut donc figurer dans la liste et pas dans ce graphique.
 
-## Limites connues
+## À savoir
 
 - Les réglages sont communs à tout l'établissement : vous ne pouvez pas les changer pour votre fiche.
 - Un rôle mal renseigné par une source peut suffire à écarter une publication. Sur la fiche, l'onglet **Auteurs** peut

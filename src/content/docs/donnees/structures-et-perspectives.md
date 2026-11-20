@@ -48,7 +48,7 @@ Le **Tableau de bord** propose lui une période réglable avec **De :** et **à 
 
 **Exporter** télécharge la liste affichée.
 
-## Limites connues
+## À savoir
 
 - **Une structure n'est pas un corpus d'affiliations.** Le périmètre part des personnes, sans vérifier l'affiliation
   signée sur la publication ni les dates d'appartenance : d'où l'exemple ci-dessus. Les chiffres peuvent donc différer

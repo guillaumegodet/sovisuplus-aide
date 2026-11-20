@@ -33,7 +33,7 @@ contributors. It does appear for the PhD student, recorded as author.
 The publications-per-year chart applies the perspective setting, and only counts **dated** publications. A publication
 without a date can therefore be in the list and not in this chart.
 
-## Known limits
+## Good to know
 
 - These settings are common to the whole institution: you cannot change them for your record.
 - A role wrongly provided by a source can be enough to exclude a publication. On the record, the **Authors** tab may show

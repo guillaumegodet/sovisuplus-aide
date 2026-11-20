@@ -42,7 +42,7 @@ identifiers, the page is read-only: see [Roles and rights](/en/donnees/roles-et-
 If your institution has configured it, an alert appears on your publications: "Your publication lists may be incomplete".
 It leads to **My Account**.
 
-## Known limits
+## Good to know
 
 - **Adding an identifier is not always enough**: a new collection may be needed to find the publications, see
   [Sources and harvesting](/en/donnees/sources-et-moissonnage/).

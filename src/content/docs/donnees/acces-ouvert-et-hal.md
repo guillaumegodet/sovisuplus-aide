@@ -50,7 +50,7 @@ publications **sans aucune référence HAL**, c'est-à-dire celles affichées **
 sous forme de simple notice, sans fichier, n'y figure donc pas : la colonne **Statut HAL** précise le type de dépôt
 (**Notice**, **Fichier** ou **Annexe**).
 
-## Limites connues
+## À savoir
 
 - **Les statuts décrivent ce que les sources déclarent**, pas une vérification du texte chez l'éditeur.
 - **Beaucoup de publications peuvent rester sans statut** : UNKNOWN n'est pas synonyme de fermé.

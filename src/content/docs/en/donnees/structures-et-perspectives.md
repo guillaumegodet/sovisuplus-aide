@@ -47,7 +47,7 @@ an adjustable period with **From:** and **to:**.
 
 **Export** downloads the displayed list.
 
-## Known limits
+## Good to know
 
 - **A structure is not a corpus of affiliations.** The scope starts from people, without checking the affiliation signed on
   the publication or the membership dates: hence the example above. Figures may therefore differ from a report based on

@@ -45,7 +45,7 @@ When the result arrives, a message says the list has changed. Click **Update vie
 A correction made in SoVisu+ is not immediate. While it is processed, the record shows:
 "This document is being updated and cannot be edited right now."
 
-## Known limits
+## Good to know
 
 - **Without an identifier, few results.** Sources are queried using identifiers: for a person with no external
   identifier, almost no publications can be found.
