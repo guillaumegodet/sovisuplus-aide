@@ -24,23 +24,6 @@ différents sans qu'aucune n'ait de problème. Dans les guides, ces différences
 | Rôles de contribution retenus | Voir [Contributions et rôles retenus](/donnees/contributions-et-roles-retenus/) |
 | Version de SoVisu+ | Calendrier de mise à jour de l'établissement |
 
-## Nantes Université
-
-État en novembre 2026, version 1.6.4.
-
-| Fonction | État |
-|---|---|
-| Droits des chercheurs | **Consultation seule** : les rôles propres ne sont pas attribués |
-| Modification des identifiants | Depuis l'annuaire de l'établissement, pas depuis SoVisu+ |
-| Authentification ORCID | Non configurée |
-| Dépôt HAL | Non activé |
-| Alerte « identifiants manquants » | Non configurée |
-
-Pour faire corriger une donnée, voir [Où corriger quoi](/guides/corriger/ou-corriger-quoi/). L'annuaire est géré dans
-[Druid](https://druid-aide.guillaumegodet.workers.dev/), qui a sa propre aide.
-
-Contact : [Support](/guides/support/).
-
 ## Comment connaître votre situation
 
 Le [Support](/guides/support/) de votre établissement peut vous l'indiquer.

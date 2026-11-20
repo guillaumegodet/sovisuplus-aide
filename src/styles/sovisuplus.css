@@ -53,9 +53,16 @@ header.header starlight-lang-select select,
 header.header .sl-flex a {
 	color: #ffffff;
 }
+/* Open list of the language and theme pickers: Starlight paints the options with the bar colour (green), so dark text
+ * was barely readable. Use the page surface and text colours instead, readable in both themes. */
 header.header starlight-theme-select select option,
 header.header starlight-lang-select select option {
-	color: #1c1b19;
+	background-color: var(--sl-color-bg);
+	color: var(--sl-color-text);
+}
+/* Logo, « Aide » and version badge (components/SiteTitle.astro) on one line. */
+header.header .title-wrapper {
+	align-items: center;
 }
 header.header .right-group > * {
 	--sl-color-hairline-shade: rgb(255 255 255 / 0.4);

@@ -44,7 +44,7 @@ Sans aucun droit sur les identifiants, la page est en consultation seule : voir
 Si votre établissement l'a configurée, une alerte s'affiche sur vos publications : « Vos listes de publications sont
 sans doute incomplètes ». Elle renvoie vers **Mon compte**.
 
-## Limites connues
+## À savoir
 
 - **Un identifiant ajouté ne suffit pas toujours** : une nouvelle collecte peut être nécessaire pour retrouver les
   publications, voir [Sources et moissonnage](/donnees/sources-et-moissonnage/).

@@ -29,7 +29,7 @@ works.
 A publication being updated cannot be edited or selected for a merge. Wait for processing to finish, then click **Update
 view** if the message appears.
 
-## Known limits
+## Good to know
 
 - You can only merge publications within your rights: a researcher on their own record can only merge publications they
   contributed to.

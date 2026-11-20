@@ -50,7 +50,7 @@ with **no HAL reference at all**, that is those shown as **Out of HAL**. A publi
 with no file, is therefore not listed: the **Status in HAL** column specifies the deposit type (**Notice**, **File** or
 **Annex**).
 
-## Known limits
+## Good to know
 
 - **Statuses describe what the sources declare**, not a check of the text at the publisher.
 - **Many publications may remain without a status**: UNKNOWN does not mean closed.

@@ -16,7 +16,7 @@ state in version **1.6.4**. If you come across one of them, it is not an outage.
 | **Dissociate**, **Invalidate** | Record › **Sources** tab › actions menu | Present in the menu, but with no effect: a tooltip says so |
 | **Display old structures** | Structures | Waiting for structure lifecycle data |
 
-## Known limits
+## Good to know
 
-This list follows the version documented on the help [home page](/en/): your institution may be ahead of or behind it. The
-state of each change is in [What's new](/en/nouveautes/).
+Your institution may be ahead of or behind the version described by this help. What's new in that version is presented on
+the [home page](/en/).

@@ -1,5 +1,6 @@
 import type { CollectionEntry } from 'astro:content';
 import { STRINGS, baseId, langOfId, type HelpLang } from './i18n';
+import { SOVISUPLUS_VERSION } from './version';
 
 /** Markdown twin of a page: /guides/x/ → /guides/x.md, home page → /index.md. */
 export const markdownHref = (id: string): string => `/${id || 'index'}.md`;
@@ -26,25 +27,28 @@ export const toMarkdown = (entry: CollectionEntry<'docs'>): string => {
 		(entry.body ?? '')
 			.split('\n')
 			.filter((line) => !/^import\s.+\sfrom\s['"].+['"];?\s*$/.test(line))
-			.join('\n'),
+			.join('\n')
+			.replaceAll('{SOVISUPLUS_VERSION}', SOVISUPLUS_VERSION),
 		langOfId(entry.id),
 	).trim();
 	const summary = entry.data.description ? `\n\n> ${entry.data.description}` : '';
 	return `# ${entry.data.title}${summary}\n\n${body}\n`;
 };
 
-/** Help sections in reading order (same order as the sidebar in astro.config.mjs). */
+/** Help sections in reading order (same order as the sidebar in astro.config.mjs). The home page (id 'index', or 'en') holds
+ * the « Nouveautés » of the documented version. */
 export const SECTIONS = [
+	{ prefix: '', key: 'accueil' },
 	{ prefix: 'demarrer/', key: 'demarrer' },
-	{ prefix: 'guides/', key: 'guides' },
-	{ prefix: 'tutoriels/', key: 'tutoriels' },
 	{ prefix: 'donnees/', key: 'donnees' },
-	{ prefix: 'nouveautes', key: 'nouveautes' },
+	{ prefix: 'guides/', key: 'guides' },
+	{ prefix: 'cas-d-usage/', key: 'casUsage' },
 ] as const;
 
 /** Page prefixes in sidebar order — keep in sync with `sidebar` in astro.config.mjs. */
 const SIDEBAR_ORDER = [
 	'demarrer/',
+	'donnees/',
 	'guides/mon-profil/',
 	'guides/publications/',
 	'guides/fiche-publication/',
@@ -54,9 +58,7 @@ const SIDEBAR_ORDER = [
 	'guides/corriger/',
 	'guides/assistant',
 	'guides/support',
-	'tutoriels/',
-	'donnees/',
-	'nouveautes',
+	'cas-d-usage/',
 ];
 const rank = (id: string): number => {
 	const i = SIDEBAR_ORDER.findIndex((prefix) => id.startsWith(prefix));
@@ -68,7 +70,7 @@ export const groupBySection = (entries: CollectionEntry<'docs'>[], lang: HelpLan
 	SECTIONS.map(({ prefix, key }) => ({
 		label: STRINGS[lang].sections[key],
 		entries: entries
-			.filter((e) => langOfId(e.id) === lang && baseId(e.id).startsWith(prefix))
+			.filter((e) => langOfId(e.id) === lang && (prefix === '' ? ['', 'index'].includes(baseId(e.id)) : baseId(e.id).startsWith(prefix)))
 			.sort(
 				(a, b) =>
 					rank(baseId(a.id)) - rank(baseId(b.id)) ||

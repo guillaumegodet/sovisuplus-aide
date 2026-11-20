@@ -7,7 +7,7 @@ sidebar:
 
 :::note[In brief]
 **For:** a person who monitors a laboratory's publications, often for a report.
-**Time:** a few hours, in several sessions. **Result:** a reliable list of members and publications, and its known limits.
+**Time:** a few hours, in several sessions. **Result:** a reliable list of members and publications, with the gaps explained.
 :::
 
 Viewing requires no role. To correct, you need roles on the unit, given by your institution: see

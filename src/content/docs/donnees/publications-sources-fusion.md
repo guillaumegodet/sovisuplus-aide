@@ -30,7 +30,7 @@ tort deux travaux différents.
 Une publication en cours de mise à jour ne peut ni être modifiée, ni être sélectionnée pour une fusion. Attendez la fin du traitement, puis cliquez sur **Mettre à jour l'affichage** si le message
 apparaît.
 
-## Limites connues
+## À savoir
 
 - Vous ne pouvez fusionner que des publications situées dans vos droits : un chercheur sur sa fiche ne peut fusionner
   que des publications dont il est contributeur.

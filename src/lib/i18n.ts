@@ -18,15 +18,16 @@ export const STRINGS = {
 		inApp: 'Dans SoVisu+',
 		availableOn: 'Disponible sur',
 		viewMarkdown: 'Voir en Markdown',
+		versionTitle: 'Version de SoVisu+ décrite par cette aide',
 		llmsTitle: 'Aide SoVisu+',
 		llmsSummary:
 			"SoVisu+ est une application au service des chercheurs et des structures de recherche : visualiser et qualifier les publications, les identifiants et les collaborations. Chaque page existe en Markdown (lien ci-dessous) ; /llms-full.txt contient toute l'aide en un seul fichier.",
 		sections: {
+			accueil: 'Accueil et nouveautés',
 			demarrer: 'Démarrer',
-			guides: 'Guides pratiques',
-			tutoriels: 'Tutoriels',
 			donnees: 'Comprendre les données',
-			nouveautes: 'Nouveautés',
+			guides: 'Guides pratiques',
+			casUsage: 'Cas d’usage',
 		},
 	},
 	en: {
@@ -35,15 +36,16 @@ export const STRINGS = {
 		inApp: 'In SoVisu+',
 		availableOn: 'Available on',
 		viewMarkdown: 'View as Markdown',
+		versionTitle: 'SoVisu+ version described by this help',
 		llmsTitle: 'SoVisu+ Help',
 		llmsSummary:
 			'SoVisu+ is an application for researchers and research structures: view and curate publications, identifiers and collaborations. Every page is also available in Markdown (links below); /en/llms-full.txt contains the whole help in a single file.',
 		sections: {
+			accueil: "Home and what's new",
 			demarrer: 'Get started',
-			guides: 'How-to guides',
-			tutoriels: 'Tutorials',
 			donnees: 'Understanding the data',
-			nouveautes: "What's new",
+			guides: 'How-to guides',
+			casUsage: 'Use cases',
 		},
 	},
 } as const;

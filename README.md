@@ -12,12 +12,11 @@ l'exploitation restent documentées dans le dépôt de SoVisu+. Licence : CeCILL
 
 ```
 src/content/docs/
-  index.mdx               accueil
+  index.mdx               accueil et nouveautés de la version décrite
   demarrer/               SoVisu+ en 5 minutes, premiers pas, glossaire
   guides/<rubrique>/      une tâche = une page
-  tutoriels/              parcours longs
+  cas-d-usage/            parcours complets (« Cas d’usage »)
   donnees/                « Comprendre les données » (référence)
-  nouveautes.md
   en/                     version anglaise, mêmes chemins de fichiers
 src/components/QuiOu.astro      encadré « Qui peut le faire, et où » des guides
 src/components/PageTitle.astro  surcharge Starlight : lien « Voir en Markdown »
@@ -76,5 +75,6 @@ recréer le conteneur. Le bouton « Assistance » apparaît dans la barre latér
 ## À chaque nouvelle version de SoVisu+
 
 1. `git diff <ancienne>..<nouvelle> -- src/locales/fr/messages.po` dans le dépôt SoVisu+, plus les notes de version.
-2. Revoir les pages touchées, `donnees/fonctions-a-venir` et `nouveautes.md`.
-3. Relever la version documentée ici et sur l'accueil.
+2. Revoir les pages touchées et `donnees/fonctions-a-venir`.
+3. Relever la version dans `src/lib/version.ts` (bandeau d'en-tête et accueil) et dans ce README, puis remplacer le
+   bloc « Nouveautés » des deux pages d'accueil. Les pages ne citent pas la version : elle n'est écrite qu'une fois.

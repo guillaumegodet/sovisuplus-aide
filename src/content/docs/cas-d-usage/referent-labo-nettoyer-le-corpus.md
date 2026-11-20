@@ -7,7 +7,7 @@ sidebar:
 
 :::note[En bref]
 **Pour qui :** une personne qui suit les publications d'un laboratoire, souvent pour un bilan.
-**Durée :** quelques heures, en plusieurs fois. **Résultat :** une liste de membres et de publications fiable, et ses limites connues.
+**Durée :** quelques heures, en plusieurs fois. **Résultat :** une liste de membres et de publications fiable, et des écarts expliqués.
 :::
 
 Consulter ne demande aucun rôle. Pour corriger, il faut des rôles sur l'unité, attribués par votre établissement : voir
